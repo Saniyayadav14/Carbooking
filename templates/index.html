@@ -1,0 +1,1027 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="header">
+        <div class="top-header">
+            <div class="overlay">
+                <div class="socialicon">
+                    <div class="social-box">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="social-box">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="social-box">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="social-box">
+                        <a href="www.linkedin.com/in/saniya-yadav-5129463a0"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="emailsection">
+                    <a href="#"><i class="fa-solid fa-location-arrow"></i>Find A Location</a>
+                    <a href="tel:+01234567890"> <i class="fa-solid fa-phone"></i>+01234567890</a>
+                    <a href="mailto:Example@gmail.com"><i class="fa-solid fa-envelope"></i> Example@gmail.com</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="overlay">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fa-solid fa-car"></i>Booking</a>
+                </div>
+                <div class="navbar">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="service.html">Service</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="#" target="_blank">Pages</a>
+                        <a href="contact.html" target="_blank">Contact</a>
+                    </nav>
+                </div>
+                <div class="get-start">
+                    <a href="index.html">Get-Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+
+    <main>
+        <!-- hero section start -->
+        <section class="hero">
+            <div class="inner">
+                <div class="overlay">
+                    <div class="hero-main">
+                        <div class="hero-content">
+                            <h1>Get 15% Off your Rental Plan your trip now</h1>
+                            <h4>Treat yourself in USA</h4>
+                        </div>
+                        <div class="hero-form">
+                            <div class="car-form">
+                                <h3>CONTINUE CAR RESERVATION</h3>
+                                <form>
+                                    <select class="selection">
+                                        <option value="">Select Your car Type</option>
+                                        <option value="">VW Golf VII</option>
+                                        <option value="">Audi A1 S-line</option>
+                                        <option value="">Toyota Camry</option>
+                                        <option value="">BMW 320 Modernline</option>
+                                    </select>
+                                    <div class="input-group">
+                                        <div class="pick-up">
+                                            <span><i class="fa-solid fa-location-dot"></i>
+                                                Pick Up</span>
+                                        </div>
+                                        <input type="text" placeholder="Enter a City or Airport">
+                                    </div>
+                                    <h4 class="form-heading">Need a Different drop-off location</h4>
+                                    <div class="input-group">
+                                        <div class="pick-up">
+                                            <span><i class="fa-solid fa-location-dot"></i>
+                                                Drop Off</span>
+                                        </div>
+                                        <input type="text" placeholder="Enter a City or Airport">
+                                    </div>
+
+                                    <div class="input-group1">
+                                        <div class="pick-up1">
+                                            <span><i class="fa-solid fa-calendar-days"></i>
+                                                Pick Up</span>
+                                        </div>
+                                        <input type="date" placeholder="dd-mm-yy">
+                                        <select class="selection1">
+                                            <option value="time">12:00AM</option>
+                                            <option value="time">1:00AM</option>
+                                            <option value="time">2:00AM</option>
+                                            <option value="time">3:00AM</option>
+                                            <option value="time">4:00AM</option>
+                                        </select>
+
+
+                                    </div>
+
+                                    <div class="input-group1">
+                                        <div class="pick-up1">
+                                            <span><i class="fa-solid fa-calendar-days"></i>
+                                                Drop Up</span>
+                                        </div>
+                                        <input type="date" placeholder="dd-mm-yy">
+                                        <select class="selection1">
+                                            <option value="time">12:00AM</option>
+                                            <option value="time">1:00AM</option>
+                                            <option value="time">2:00AM</option>
+                                            <option value="time">3:00AM</option>
+                                            <option value="time">4:00AM</option>
+                                        </select>
+                                    </div>
+                                    <div class="book-now">
+                                        <input type="submit" value="Book Now">
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- cental feature start -->
+        <section class="cental-feature">
+            <div class="feature">
+                <h2 class="feature-heading"><span>Booking</span> Features</h2>
+                <p class="feature-discription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde inventore
+                    placeat porro odio et labore aliquid, sit enim! Quaerat, quas? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Nam quisquam magni possimus tenetur molestias dicta.</p>
+            </div>
+            <div class="overlay">
+                <div class="feature-content-box">
+                    <div class="first-class">
+                        <div class="class-icon">
+                            <div class="trophy">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="class-para">
+                            <h3 class="class-service">First Class services</h3>
+                            <p class="service-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                                totam consequatur, illum
+                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
+                        </div>
+                    </div>
+                    <div class="first-class">
+                        <div class="class-icon">
+                            <div class="trophy">
+                                <i class="fa-solid fa-road"></i>
+
+                            </div>
+
+                        </div>
+                        <div class="class-para">
+                            <h3 class="class-service">24/7 road assistance</h3>
+                            <p class="service-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                                totam consequatur, illum
+                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content-box">
+                    <img src="{% static 'image/car-1.png' %}" alt="car-1">
+                </div>
+
+
+                <div class="feature-content-box">
+                    <div class="first-class">
+
+                        <div class="class-para">
+                            <h3 class="class-service1">Quality at Minimum</h3>
+                            <p class="service-detail1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                                totam consequatur, illum
+                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
+                        </div>
+                        <div class="class-icon">
+                            <div class="trophy">
+                                <i class="fa-solid fa-tag"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-class">
+
+                        <div class="class-para">
+                            <h3 class="class-service1">Free Pick-up & Drop-Off</h3>
+                            <p class="service-detail1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                                totam consequatur, illum
+                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
+                        </div>
+                        <div class="class-icon">
+                            <div class="trophy">
+                                <i class="fa-solid fa-map-pin"></i>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cental feature end -->
+
+        <!-- cental about start -->
+        <section class="cental-about">
+            <div class="overlay">
+                <div class="cental-left">
+                    <h2 class="about-heading">Cental<span> About</span></h2>
+                    <p class="about-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati
+                        ad
+                        nesciunt eum
+                        necessitatibus repellendus tempora, mollitia architecto eius dolore velit, natus nam cupiditate
+                        fuga
+                        cum tempore minus in! Perferendis laborum debitis quisquam assumenda explicabo exercitationem
+                        ratione voluptatem sit veritatis?</p>
+
+                    <div class="our-vision">
+                        <div class="vision-box">
+                            <div class="target">
+                                <div class="gol">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                            </div>
+                            <h4 class="vision-heading">Our Vision</h4>
+                            <p class="vision-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                                mollitia
+                                deserunt.</p>
+                        </div>
+                        <div class="vision-box">
+                            <div class="target">
+                                <div class="gol">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                            </div>
+                            <h4 class="vision-heading">Our Mision</h4>
+                            <p class="vision-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                                mollitia
+                                deserunt.</p>
+                        </div>
+                    </div>
+
+                    <p class="cental-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat eaque
+                        ipsam quia ea laborum nobis dicta quo, alias cum quos, eum aut quidem qui consequatur. Odio,
+                        officia
+                        perspiciatis assumenda magni, sunt, eligendi libero corrupti exercitationem rem laborum dicta?
+                        Aliquid.</p>
+
+                    <div class="experience">
+                        <div class="year-of">
+                            <h2 class="number-17">17</h2>
+                            <h5 class="topic">Years of experience</h5>
+                        </div>
+                        <div class="deatails">
+                            <ul type="none">
+                                <li class="right-tick">
+                                    <i class="fa-solid fa-circle-check"></i><span>Lorem ipsum dolor sit amet</span>
+                                </li>
+                                <li class="right-tick">
+                                    <i class="fa-solid fa-circle-check"></i><span> ipsum dolor sit amet consecteturm
+                                        elit.</span>
+                                </li>
+                                <li class="right-tick">
+                                    <i class="fa-solid fa-circle-check"></i><span> Ut reprehenderit suscipit
+                                        korem</span>
+                                </li>
+                                <li class="right-tick">
+                                    <i class="fa-solid fa-circle-check"></i><span>in magni illum magnam non saepe</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="customer-detail">
+                        <div class="more-about">
+                            <div class="more-about-us">
+                                <a href="#">More About Us</a>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <div class="picture"></div>
+                            <div class="picture-detail">
+                                <h3 class="william">William Burgess</h3>
+                                <span class="career">Career Founder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cental-left">
+                    <div class="key-chain">
+                        <img src="{% static 'image/about-img.jpg' %}" alt="">
+                    </div>
+                    <div class="taxi">
+                        <div class="taxi-img">
+                             <img src="{% static 'image/about-img-1.jpg' %}" alt="">
+                            </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- cental about end -->
+
+        <!-- numbering of car start -->
+        <section class="numbering-car">
+            <div class="numbering-inner">
+                <div class="overlay">
+                    <div class="happy-client">
+                        <div class="icon-box">
+                            <div class="like-box">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <div class="icon-box1">
+                            <h4 class="number">829+</h4>
+                            <h5 class="number-para">Happy Clients</h5>
+                        </div>
+                    </div>
+                    <div class="happy-client">
+                        <div class="icon-box">
+                            <div class="like-box">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                        </div>
+                        <div class="icon-box1">
+                            <h4 class="number">56+</h4>
+                            <h5 class="number-para">Number of cars</h5>
+                        </div>
+                    </div>
+                    <div class="happy-client">
+                        <div class="icon-box">
+                            <div class="like-box">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                        </div>
+                        <div class="icon-box1">
+                            <h4 class="number">127+</h4>
+                            <h5 class="number-para">Car Center</h5>
+                        </div>
+                    </div>
+                    <div class="happy-client">
+                        <div class="icon-box">
+                            <div class="like-box">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="icon-box1">
+                            <h4 class="number">589+</h4>
+                            <h5 class="number-para">Total kilometers</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!-- numbering of car end -->
+        <!-- cental service start -->
+        <section class="cental-service">
+            <div class="cental-topic">
+                <h3 class="topic-service">Cental<span> Services</span></h3>
+                <p class="topic-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem
+                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
+            </div>
+
+            <div class="overlay">
+                <div class="car-services">
+                    <div class="car-services1">
+                        <div class="car-s">
+                            <div class="phone">
+                                <div class="phone-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                            </div>
+                            <div class="phone-text">
+                                <h3 class="phone-heading">
+                                    Phone Reservation
+                                </h3>
+                                <p class="phone-para">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
+                                    voluptatem ipsum dolor sit amet vitae Fuga ut soluta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="car-s">
+                            <div class="phone">
+                                <div class="phone-icon">
+                                    <i class="fa-solid fa-rectangle-list"></i>
+                                </div>
+                            </div>
+                            <div class="phone-text">
+                                <h3 class="phone-heading">
+                                    Special Rate
+                                </h3>
+                                <p class="phone-para">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga elit. voluptatem
+                                    ipsum dolor sit amet vitae Fuga ut soluta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="car-s">
+                            <div class="phone">
+                                <div class="phone-icon">
+                                    <i class="fa-solid fa-road"></i>
+                                </div>
+                            </div>
+                            <div class="phone-text">
+                                <h3 class="phone-heading">
+                                    On Way Rantel
+                                </h3>
+                                <p class="phone-para">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
+                                    voluptatem ipsum dolor sit amet vitae Fuga ut soluta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-services2">
+                        <div class="car-s">
+                            <div class="phone">
+                                <div class="phone-icon">
+                                    <i class="fa-solid fa-umbrella"></i>
+                                </div>
+                            </div>
+                            <div class="phone-text">
+                                <h3 class="phone-heading">
+                                    Life Insurance
+                                </h3>
+                                <p class="phone-para">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas elit.
+                                    voluptatem ipsum dolor sit amet vitae Fuga ut soluta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="car-s">
+                            <div class="phone">
+                                <div class="phone-icon">
+                                    <i class="fa-solid fa-building"></i>
+                                </div>
+                            </div>
+                            <div class="phone-text">
+                                <h3 class="phone-heading">
+                                    City to City
+                                </h3>
+                                <p class="phone-para">
+                                    Lorem, ipsum dolor sit adipisicing elit. Fuga voluptas adipisicing elit. voluptatem
+                                    ipsum dolor sit amet vitae Fuga ut soluta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="car-s">
+                            <div class="phone">
+                                <div class="phone-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                </div>
+                            </div>
+                            <div class="phone-text">
+                                <h3 class="phone-heading">
+                                    Free Rides
+                                </h3>
+                                <p class="phone-para">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga elit. voluptatem
+                                    ipsum dolor sit amet vitae Fuga ut soluta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cental service end -->
+        <!-- vehicle categories start-->
+        <section class="vehicle-categories">
+            <div class="vehicle-top">
+                <h3 class="topic-vehicle">Vehicle<span> Categories</span></h3>
+                <p class="vehicle-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                    exercitationem
+                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
+            </div>
+            <div class="vehicle-bottom">
+                <div class="overlay">
+                    <div class="vehicle-box">
+                        <div class="vehicle-inner">
+                            <div class="vehicle-car">
+                                <img src="{% static 'image/car-4.png' %}" alt="car-4">
+                            </div>
+                            <div class="vehicle-topic">
+                                <h4 class="hyundai">Hyundai Kona Electric</h4>
+                                <p class="review">4.8 Review
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="price-box">
+                                    <span>$187:00/Day</span>
+                                </div>
+                                <div class="icon-txt">
+                                    <P><i class="fa-solid fa-users"></i>4Seat</P>
+                                    <P><i class="fa-solid fa-car"></i>AT/MT</P>
+                                    <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
+                                </div>
+                                <div class="icon-txt1">
+                                    <P><i class="fa-solid fa-car"></i>2015</P>
+                                    <P><i class="fa-solid fa-gears"></i>AUTO</P>
+                                    <P><i class="fa-solid fa-road"></i>27K</P>
+                                </div>
+
+                                <div class="booking-now">
+                                    <a href="#">Book Now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vehicle-box">
+                        <div class="vehicle-inner">
+                            <div class="vehicle-car">
+                                <img src="{% static 'image/car-1.png' %}" alt="car-4">
+                            </div>
+                            <div class="vehicle-topic">
+                                <h4 class="hyundai">Mercedes Benz R3</h4>
+                                <p class="review">4.5 Review
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </p>
+                                <div class="price-box">
+                                    <span>$99:00/Day</span>
+                                </div>
+                                <div class="icon-txt">
+                                    <P><i class="fa-solid fa-users"></i>4Seat</P>
+                                    <P><i class="fa-solid fa-car"></i>AT/MT</P>
+                                    <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
+                                </div>
+                                <div class="icon-txt1">
+                                    <P><i class="fa-solid fa-car"></i>2015</P>
+                                    <P><i class="fa-solid fa-gears"></i>AUTO</P>
+                                    <P><i class="fa-solid fa-road"></i>27K</P>
+                                </div>
+
+                                <div class="booking-now">
+                                    <a href="#">Book Now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vehicle-box">
+                        <div class="vehicle-inner">
+                            <div class="vehicle-car">
+                                <img src="{% static 'image/car-2.png' %}" alt="car-4">
+                            </div>
+                            <div class="vehicle-topic">
+                                <h4 class="hyundai">Toyota Corolla Cross</h4>
+                                <p class="review">3.5 Review
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </p>
+                                <div class="price-box">
+                                    <span>$128:00/Day</span>
+                                </div>
+                                <div class="icon-txt">
+                                    <P><i class="fa-solid fa-users"></i>4Seat</P>
+                                    <P><i class="fa-solid fa-car"></i>AT/MT</P>
+                                    <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
+                                </div>
+                                <div class="icon-txt1">
+                                    <P><i class="fa-solid fa-car"></i>2015</P>
+                                    <P><i class="fa-solid fa-gears"></i>AUTO</P>
+                                    <P><i class="fa-solid fa-road"></i>27K</P>
+                                </div>
+
+                                <div class="booking-now">
+                                    <a href="#">Book Now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- vehicle categories end-->
+        <!-- cental blog & news start-->
+        <section class="vehicle-categories">
+            <div class="vehicle-top">
+                <h3 class="topic-vehicle">Cental <span>Blog & News</span></h3>
+                <p class="vehicle-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                    exercitationem
+                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
+            </div>
+            <div class="overlay">
+                <div class="blog-bottom">
+                    <div class="blog-rental">
+                        <div class="blog-img">
+                            <img src="{% static 'image/blog-1.jpg' %}" alt="blog-1">
+                            <div class="dec30">
+                                <span>30 Dec 2025</span>
+                            </div>
+                        </div>
+                        <div class="blog-text">
+                            <div class="martin">
+                                <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
+                                <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
+                            </div>
+                            <h2 class="driving">Rental Cars how to check
+                                driving fines?
+                            </h2>
+                            <p class="driving-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla
+                                blanditiis quisquam, ex ut quis voluptates animi voluptatum, tenetur ullam rem in alias,
+                                quae officia.</p>
+                            <h5 class="read-more">Read More
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="blog-rental">
+                        <div class="blog-img">
+                            <img src="{% static 'image/blog-2.jpg' %}" alt="blog">
+                            <div class="dec30">
+                                <span>25 Dec 2025</span>
+                            </div>
+                        </div>
+                        <div class="blog-text">
+                            <div class="martin">
+                                <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
+                                <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
+                            </div>
+                            <h2 class="driving"> Rental cost of sport and other
+                                cars
+                            </h2>
+                            <p class="driving-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla
+                                blanditiis quisquam, ex ut quis voluptates animi voluptatum, tenetur ullam rem in
+                                alias,nulla blanditiis quisquam, ex ut quis quae officia.</p>
+                            <h5 class="read-more">Read More
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="blog-rental">
+                        <div class="blog-img">
+                            <img src="{% static 'image/blog-3.jpg' %}" alt="blog-3">
+                            <div class="dec30">
+                                <span>27 Dec 2025</span>
+                            </div>
+                        </div>
+                        <div class="blog-text">
+                            <div class="martin">
+                                <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
+                                <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
+                            </div>
+                            <h2 class="driving"> Document required for car rental
+                            </h2>
+                            <p class="driving-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla
+                                blanditiis quisquam, ex ut quis voluptates animi voluptatum,nulla blanditiis quisquam,
+                                ex ut
+                                quis tenetur ullam rem in alias, quae officia.</p>
+                            <h5 class="read-more">Read More
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <!-- cental blog & news end -->
+        <!-- rent your car start -->
+        <section class="rent-car">
+            <div class="overlay">
+                <div class="rent-img">
+                    <div class="rent-inner">
+                        <div class="interest-rent">
+                            <h3 class="rent-heading">Rent Your Car</h3>
+                            <h2 class="renting">Interested in Renting?</h2>
+                            <h5 class="rent-para">Dont't hesitate and send us a message.</h5>
+                            <div class="rent-box">
+                                <div class="rent-msg">
+                                    <a href="#">Whatsapp</a>
+                                </div>
+                                <div class="rent-contact">
+                                    <a href="#">Contact Us</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- rent your car end -->
+
+        <!-- client review start -->
+        <section class="client-review">
+            <div class="review-top">
+                <h3 class="heading-review">Our Clients <span>Reviews</span></h3>
+                <p class="heading-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                    exercitationem
+                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
+            </div>
+            <div class="review-bottom">
+                <div class="overlay">
+                    <div class="person-card">
+                        <div class="card-top">
+                            <div class="girl-icon">
+                                <div class="girl-pic">
+                                    <img src="{% static 'image/team-1.jpg' %}" alt="team-1">
+                                </div>
+                            </div>
+                            <div class="girl-detail">
+                                <h3>Person Name</h3>
+                                <p>Profession</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus doloribus cumque,
+                                sunt quasi maiores enim reprehenderit minima quaerat expedita vel quis voluptate
+                                inventore recusandae.</p>
+                        </div>
+                    </div>
+                    <div class="person-card">
+                        <div class="card-top">
+                            <div class="girl-icon">
+                                <div class="girl-pic">
+                                    <img src="{% static 'image/team-2.jpg' %}" alt="team-1">
+                                </div>
+                            </div>
+                            <div class="girl-detail">
+                                <h3>Person Name</h3>
+                                <p>Profession</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus doloribus cumque,
+                                sunt quasi maiores enim reprehenderit minima quaerat expedita vel quis voluptate
+                                inventore recusandae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- client review end -->
+
+        <!-- customer support center  start-->
+        <section class="customer-support">
+            <div class="customer-top">
+                <h3 class="heading-customer">Customer<span> Support</span> Center</h3>
+                <p class="customer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                    exercitationem
+                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
+            </div>
+            <div class="customer-bottom">
+                <div class="overlay">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <div class="image-div">
+                                <img src="{%  static 'image/team-1.jpg' %}" alt="team-1">
+                            </div>
+                            <h3 class="customer-heading">Martin Doe</h3>
+                            <p class="pro">Profession</p>
+                            <div class="rent-social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
+                        </div>
+                      
+                    </div>
+                    <div class="team-item">
+                        <div class="team-img">
+                            <div class="image-div">
+                                <img src="{% static 'image/team-4.jpg' %}" alt="team-1">
+                            </div>
+                            <h3 class="customer-heading">Martin Doe</h3>
+                            <p class="pro">Profession</p>
+                            <div class="rent-social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="team-item">
+                        <div class="team-img">
+                            <div class="image-div">
+                                <img src="{% static 'image/team-3.jpg' %}" alt="team-1">
+                            </div>
+                            <h3 class="customer-heading">Martin Doe</h3>
+                            <p class="pro">Profession</p>
+                            <div class="rent-social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="team-item">
+                        <div class="team-img">
+                            <div class="image-div">
+                                <img src="{% static 'image/team-2.jpg' %}" alt="team-1">
+                            </div>
+                            <h3 class="customer-heading">Martin Doe</h3>
+                            <p class="pro">Profession</p>
+                            <div class="rent-social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer support center end-->
+        <!-- hero section end -->
+    </main>
+
+    <!-- footer section start -->
+    <footer>
+        <div class="foot-1">
+            <div class="overlay">
+                <div class="content-1">
+                    <h3>About Us</h3>
+                    <p>Dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam, doloribus dicta
+                        facilis dolore corrupti unde fuga. Voluptates nisi pariatur similique esse temporibus quisquam,
+                        nobis aut dolorum, deleniti dolorem possimus.</p>
+                    <div class="search">
+                        <div class="search-input">
+                            <input type="email" placeholder="Enter Your Email">
+                        </div>
+                        <div class="search-btn">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-1">
+                    <h3>Quick Links</h3>
+                    <ul type="none">
+                        <li class="links">
+
+                            <a href="#"><i class="fa-solid fa-angle-right left-sign"></i></i><span>About</span></a>
+                        </li>
+                        <li class="links">
+
+                            <a href="#"><i class="fa-solid fa-angle-right left-sign"></i></i><span>Cars</span></a>
+                        </li>
+                        <li class="links">
+
+                            <a href="#"><i class="fa-solid fa-angle-right left-sign"></i></i><span>Car Types</span></a>
+                        </li>
+                        <li class="links">
+
+                            <a href="#"><i class="fa-solid fa-angle-right left-sign"></i></i><span>Team</span></a>
+                        </li>
+                        <li class="links">
+
+                            <a href="#"><i class="fa-solid fa-angle-right left-sign"></i></i><span>Contact Us</span></a>
+                        </li>
+                        <li class="links">
+
+                            <a href="#"><i class="fa-solid fa-angle-right left-sign"></i></i><span>Terms &
+                                    Conditions</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="content-1">
+                    <h3>Business Hours</h3>
+                    <ul type="none">
+                        <li class="links">
+                            <h4>Mon-friday:</h4>
+                            <h5>09:00am to 7:00pm</h5>
+                        </li>
+                        <li class="links">
+                            <h4>Saturday:</h4>
+                            <h5>10:00am to 5:00pm</h5>
+                        </li>
+                        <li class="links">
+                            <h4>Vacation:</h4>
+                            <h5>All Sunday is our vacation</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-1">
+                    <h3>Contact Info</h3>
+                    <ul type="none">
+                        <li class="links">
+
+                            <a href=""> <i class="fa-solid fa-location-dot"></i>Darshan Nagar,Ayodhya,Uttar Pradesh</a>
+                        </li>
+                        <li class="links">
+
+                            <a href="mailto:saniyayadav024@gmail.com"> <i class="fa-solid fa-envelope"></i>saniyayadav024@gmail.com</a>
+                        </li>
+                        <li class="links">
+
+                            <a href="telus:+91 8005266851"><i class="fa-solid fa-phone"></i>+91 8005266851</a>
+                        </li>
+                        <li class="links">
+
+                            <a href="telus:+0123 345 67890"><i class="fa-solid fa-print"></i>+012 345 67890</a>
+                        </li>
+                        <li class="links">
+                            <div class="social-div">
+
+                                <div class="fb">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="fb">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="fb">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="fb">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-2">
+            <div class="overlay">
+                <div>
+                    <h6>©
+                        <a href="#">Car Booking</a>
+                        All Rights Reserved.
+                    </h6>
+                </div>
+
+                <div>
+                    <h6> Designed by
+                        <a href="#">Saniya Yadav</a>
+                        Distributed by
+                        <a href="#">Mr. Sudhakar Maurya</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section end -->
+     
+
+</body>
+
+</html>

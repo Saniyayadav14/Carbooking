@@ -1,0 +1,1939 @@
+:root {
+    --primary-color: #ea001e;
+    --secondary-color: #1f2e4e;
+    --ternary-color: white;
+    --forth-color: rgb(137, 133, 133);
+
+}
+
+a {
+    color: var(--ternary-color);
+    text-decoration: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+/* header section start */
+
+.header{
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+}
+.top-header {
+    height: 47px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid grey;
+}
+
+.overlay {
+    min-height: 47px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialicon {
+    display: flex;
+    gap: 10px;
+}
+
+.social-box {
+    height: 30px;
+    background-color: var(--ternary-color);
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-box:hover {
+    background-color: var(--primary-color);
+}
+
+.social-box i {
+    font-size: 15px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.social-box:hover i {
+    color: var(--ternary-color);
+}
+
+.emailsection a {
+    text-decoration: none;
+    color: var(--forth-color);
+    font-size: 16px;
+
+
+}
+
+.emailsection a i {
+    color: var(--primary-color);
+    padding: 0px 25px;
+}
+
+.bottom-header {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 2.3em;
+    color: var(--primary-color);
+    font-weight: bold;
+    line-height: 80px;
+
+}
+
+.navbar nav a {
+    text-decoration: none;
+    margin: 0px 20px;
+    color: var(--secondary-color);
+    font-weight: bold;
+
+}
+
+.navbar nav a:hover {
+    color: var(--primary-color);
+}
+
+.get-start {
+    height: 50px;
+    width: 10%;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.get-start:hover {
+    background-color: var(--secondary-color);
+}
+
+.get-start a {
+    text-decoration: none;
+    line-height: 50px;
+    color: var(--ternary-color);
+
+    font-weight: bold;
+}
+
+/* header section end */
+/* hero section start */
+.hero {
+    min-height: 700px;
+    width: 100%;
+    background-image: url(../image/carousel-2\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.inner {
+    min-height: 700px;
+    width: 100%;
+    background-color: rgba(33, 35, 35, 0.6);
+
+}
+
+.hero-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 49%;
+}
+
+.hero-content h1 {
+    color: var(--ternary-color);
+    font-size: 50px;
+    padding-top: 60px;
+
+}
+
+.hero-content h4 {
+    color: var(--ternary-color);
+    padding-top: 10px;
+}
+
+.hero-form {
+    width: 49%;
+
+}
+
+.car-form {
+    height: 500px;
+    width: 95%;
+    background-color: var(--secondary-color);
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+.car-form h3 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--ternary-color);
+    padding: 20px;
+
+}
+
+.selection {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: grey;
+
+}
+
+.input-group {
+    width: 100%;
+    height: 40px;
+
+    border-radius: 10px;
+    display: flex;
+    padding: 25px 0px;
+    border-radius: 10px;
+
+}
+
+.pick-up {
+    width: 20%;
+    height: 39px;
+    border-right: 1px solid grey;
+    background-color: rgb(244, 240, 240);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pick-up span {
+    color: var(--forth-color);
+    line-height: 40px;
+}
+
+.pick-up span i {
+    color: grey;
+}
+
+.input-group input {
+    height: 39px;
+    width: 80%;
+    border: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form-heading {
+    color: var(--ternary-color);
+    padding: 30px 0px 0px 0px;
+
+}
+
+.input-group1 {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    padding: 25px 0px;
+}
+
+.pick-up1 {
+    width: 21.5%;
+    height: 39px;
+    border-right: 1px solid grey;
+    background-color: rgb(244, 240, 240);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pick-up1 span {
+    color: var(--forth-color);
+    line-height: 40px;
+}
+
+.pick-up1 span i {
+    color: grey;
+}
+
+.input-group1 input {
+    height: 39px;
+    width: 36%;
+    border: 0px;
+    color: grey;
+}
+
+.form-heading {
+    color: var(--ternary-color);
+    padding: 30px 0px 0px 0px;
+
+}
+
+.selection1 {
+    width: 50%;
+    height: 39px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0px;
+    border-left: 1px solid grey;
+    color: grey;
+
+}
+
+.book-now {
+    height: 40px;
+    width: 100%;
+    background-color: var(--ternary-color);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.book-now input {
+    height: 40px;
+    width: 100%;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+/* hero section end */
+/* cental feature start */
+.cental-feature {
+    min-height: 600px;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+}
+
+.feature {
+    height: 200px;
+    width: 100%;
+
+}
+
+.feature-heading {
+    text-align: center;
+    color: var(--primary-color);
+    padding: 50px 0px 10px 0px;
+    font-size: 35px;
+}
+
+.feature-heading span {
+    color: var(--secondary-color);
+}
+
+.feature-discription {
+    color: var(--forth-color);
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    line-height: 25px;
+}
+
+.feature-content-box {
+    width: 32%;
+    height: 350px;
+
+
+}
+
+.feature-content-box img {
+    height: 350px;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.first-class {
+    height: 175px;
+    width: 100%;
+
+    display: flex;
+}
+
+.class-icon {
+    width: 35%;
+    height: 175px;
+
+    padding: 44px 23px;
+}
+
+.trophy {
+    height: 100px;
+    width: 100px;
+    background-color: var(--primary-color);
+    padding-top: 30px;
+    line-height: 60px;
+    text-align: center;
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes circle {
+    0% {
+        border-top-right-radius: 0%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 55%;
+    }
+
+    30% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 50%;
+    }
+
+    60% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 55%;
+
+    }
+
+    100% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 55%;
+        border-bottom-right-radius: 0%;
+
+    }
+
+}
+
+.trophy i {
+    font-size: 35px;
+}
+
+.class-para {
+    width: 65%;
+    height: 225px;
+    padding-top: 30px;
+}
+
+.class-service {
+    color: black;
+    font-size: 22px;
+}
+
+.class-service1 {
+    text-align: right;
+    color: black;
+    font-size: 22px;
+}
+
+.service-detail {
+    color: var(--forth-color);
+    padding-top: 20px;
+}
+
+.service-detail1 {
+    color: var(--forth-color);
+    padding-top: 20px;
+    text-align: right;
+}
+
+/* cental feature end */
+
+/* about section start */
+.about {
+    min-height: 320px;
+    width: 100%;
+    background-image: url(../image/fact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-inner {
+    min-height: 320px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-us {
+    font-size: 55px;
+    color: var(--ternary-color);
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.about span {
+    color: white;
+    font-size: 18px;
+}
+
+.about span:nth-child(3) {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+/* about section end */
+
+/* cental about start */
+.cental-about {
+    min-height: 850px;
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.cental-left {
+    min-height: 850px;
+    width: 50%;
+
+}
+
+.about-heading {
+    font-size: 45px;
+    color: var(--secondary-color);
+}
+
+.about-heading span {
+    font-size: 45px;
+    color: var(--primary-color)
+}
+
+.about-para {
+    color: rgb(92, 89, 89);
+    padding-top: 10px;
+}
+
+.our-vision {
+    height: 270px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding: 25px 0px;
+}
+
+.vision-box {
+    height: 270px;
+    width: 48%;
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+}
+
+.target {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gol {
+    height: 100px;
+    width: 100px;
+    background-color: var(--primary-color);
+    line-height: 120px;
+    text-align: center;
+    animation-name: mision;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mision {
+    0% {
+        border-top-right-radius: 0%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 55%;
+    }
+
+    30% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 50%;
+    }
+
+    60% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 55%;
+
+    }
+
+    100% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 55%;
+        border-bottom-right-radius: 0%;
+
+    }
+
+}
+
+.gol i {
+    color: var(--secondary-color);
+    font-size: 45px;
+
+}
+
+.vision-heading {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 25px;
+}
+
+.vision-para {
+    color: grey;
+    width: 85%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.cental-paragraph {
+    color: grey;
+    padding-top: 45px;
+    position: relative;
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+
+.cental-paragraph::after {
+    content: "";
+    left: 0px;
+    height: 65px;
+    bottom: 20px;
+    width: 6px;
+    background-color: var(--secondary-color);
+    position: absolute;
+}
+
+.experience {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.year-of {
+    width: 48%;
+    background-color: var(--secondary-color);
+    height: 120px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.number-17 {
+    color: var(--ternary-color);
+    font-size: 50px;
+    padding: 15px 0px 5px 0px;
+}
+
+.topic {
+    font-size: 24px;
+    color: var(--ternary-color);
+    letter-spacing: 1px;
+}
+
+.deatails {
+    width: 48%;
+    height: 120px;
+}
+
+.right-tick {
+    color: grey;
+    padding: 5px 0px;
+
+}
+
+.right-tick i {
+    color: var(--primary-color);
+    padding-right: 25px;
+}
+
+.customer-detail {
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+
+}
+
+.more-about {
+    width: 40%;
+    height: 100px;
+
+    padding-top: 35px;
+}
+
+.more-about-us {
+    height: 60px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.more-about-us a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.customer {
+    width: 60%;
+    height: 100px;
+
+    padding-top: 15px;
+    display: flex;
+}
+
+.picture {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url(../image/attachment-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--secondary-color);
+
+}
+
+.picture-detail {
+    height: 80px;
+    width: 80%;
+
+}
+
+.william {
+    color: black;
+    font-size: 24px;
+    padding: 15px 0px 10px 12px;
+    letter-spacing: 1px;
+}
+
+.career {
+    color: grey;
+    font-size: 18px;
+    padding: 20px 0px 0px 12px;
+}
+
+.key-chain img {
+    object-fit: cover;
+    height: 650px;
+    width: 90%;
+    padding-left: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.key-chain::after {
+    right: 82px;
+    content: "";
+    height: 498px;
+    width: 6px;
+    background-color: var(--primary-color);
+    position: absolute;
+}
+
+.taxi-img img {
+    object-fit: cover;
+    position: absolute;
+    bottom:-215%;
+    border-radius: 10px;
+    height: 350px;
+    right: 78px;
+}
+
+/* cental about end */
+
+/* numbering of car start */
+.numbering-car {
+    min-height: 300px;
+    width: 100%;
+    background-image: url(../image/fact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.numbering-inner {
+    min-height: 300px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.happy-client {
+    width: 25%;
+    height: 300px;
+
+}
+
+.icon-box {
+    width: 100%;
+    height: 150px;
+
+    padding-top: 65px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.like-box {
+    height: 80px;
+    width: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: mision;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mision {
+    0% {
+        border-top-right-radius: 0%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 55%;
+    }
+
+    30% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 50%;
+    }
+
+    60% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 55%;
+
+    }
+
+    100% {
+        border-top-right-radius: 30%;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 55%;
+        border-bottom-right-radius: 0%;
+
+    }
+
+}
+
+.like-box i {
+    color: var(--secondary-color);
+    font-size: 35px;
+}
+
+.icon-box1 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    flex-direction: column;
+}
+
+.number {
+    color: white;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.number-para {
+    color: white;
+    font-size: 20px;
+}
+
+/* numbering of car end */
+/* cental process start */
+
+.cental-process {
+    min-height: 400px;
+    width: 100%;
+    background-image: url(../image/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.process-inner {
+    min-height: 430px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    display: flex;
+    flex-direction: column;
+}
+
+.cental-top {
+    min-height: 200px;
+    width: 100%;
+}
+
+.process-heading {
+    color: var(--ternary-color);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+.process-heading span {
+    color: var(--primary-color);
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.process-para {
+    color: var(--ternary-color);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    line-height: 23px;
+}
+
+.process-card {
+    min-height: 200px;
+    width: 100%;
+}
+
+.card-1 {
+    width: 32%;
+    background-color: var(--secondary-color);
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-heading {
+    color: var(--ternary-color);
+    padding: 30px 0px 0px 20px;
+    font-size: 24px;
+}
+
+.card-para {
+    color: var(--ternary-color);
+    padding: 20px 20px;
+}
+
+.card-box {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    left: 70%;
+    bottom: -20%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-number {
+    color: var(--ternary-color);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* cental process end */
+/* cental-service start */
+.cental-service {
+    min-height:850px;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+
+}
+
+.cental-topic {
+    min-height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.topic-service {
+    color: var(--secondary-color);
+    font-size: 50px;
+    padding-top: 60px;
+}
+
+.topic-service span {
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+.topic-para {
+    width: 65%;
+    margin: auto;
+    line-height: 23px;
+}
+
+.cental-services {
+    min-height: 900px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.services-heading {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.services-hd {
+    font-size: 50px;
+    padding-top: 90px;
+}
+
+.services-hd span {
+    color: var(--primary-color);
+}
+
+.services-para {
+    font-size: 17px;
+    line-height: 15px;
+    width: 80%;
+    padding-top: 15px;
+    padding-left: 20%;
+}
+
+.car-services {
+    height: 600px;
+    width: 100%;
+}
+
+.car-services1 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.car-s {
+    height: 260px;
+    width: 31%;
+    border-radius: 10px;
+    background-color: var(--ternary-color);
+}
+
+.car-services2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+.phone {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-icon {
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    background-color: var(--primary-color);
+    animation-duration: 5s;
+    animation-name: circle;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes circle {
+    0% {
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 25%;
+        border-bottom-left-radius: 35%;
+        border-top-left-radius: 50%;
+    }
+
+    30% {
+        border-top-right-radius: 25%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 35%;
+        border-top-left-radius: 50%;
+    }
+
+    60% {
+        border-top-right-radius: 25%;
+        border-bottom-right-radius: 35%;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 50%;
+    }
+
+    100% {
+        border-top-right-radius: 25%;
+        border-bottom-right-radius: 35%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 0%;
+    }
+}
+
+.phone-icon i {
+    font-size: 35px;
+    line-height: 80px;
+    color: var(--fifth-color);
+}
+
+.phone-text {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.phone-heading {
+    font-size: 27px;
+}
+
+.phone-para {
+    width: 85%;
+    padding-left: 39px;
+    color: grey;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+
+/* cental service end */
+/* vehicle categories start */
+.vehicle-categories {
+    min-height: 700px;
+    width: 100%;
+}
+
+.vehicle-top {
+    min-height: 230px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.topic-vehicle {
+    color: var(--secondary-color);
+    font-size: 50px;
+    padding-top: 60px;
+    padding-bottom: 5px;
+}
+
+.topic-vehicle span {
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+.vehicle-para {
+    width: 65%;
+    margin: auto;
+    line-height: 23px;
+}
+
+.vehicle-bottom {
+    min-height: 600px;
+    width: 100%;
+
+}
+
+.vehicle-box {
+    height: 600px;
+    width: 32%;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 22px;
+    border: 1px solid black;
+}
+
+.vehicle-inner {
+    height: 550px;
+    width: 85%;
+    background-color: rgb(239, 239, 239);
+    margin: auto;
+}
+
+.vehicle-car {
+    height: 200px;
+    background-color: rgb(239, 239, 239);
+    width: 100%;
+}
+
+.vehicle-car img {
+    object-fit: cover;
+    align-items: center;
+    height: 200px;
+    width: 90%;
+}
+
+.vehicle-topic {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    padding-top: 7px;
+}
+
+.hyundai {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+
+.review {
+    color: rgb(88, 87, 87);
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.review i {
+    color: var(--secondary-color);
+}
+
+.price-box {
+    height: 45px;
+    width: 85%;
+    background-color: var(--ternary-color);
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.price-box span {
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.icon-txt {
+    height: 50px;
+    width: 100%;
+
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.icon-txt i {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.icon-txt p {
+    color: var(--secondary-color);
+
+    padding-left: 10px;
+}
+
+.icon-txt1 {
+    height: 50px;
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 55px;
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+
+.icon-txt1 i {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.icon-txt1 p {
+    color: var(--secondary-color);
+
+    padding-left: 10px;
+}
+
+.booking-now {
+    background-color: var(--primary-color);
+    margin: auto;
+    height: 55px;
+    width: 85%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-now a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+
+}
+
+/* vehicle categories end */
+/* cental blog & news  start*/
+.blog-bottom{
+    height:610px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-rental{
+    height:560px;
+    width:32%;
+    margin: auto;
+   background-color:rgb(239, 239, 239) ;
+    border-radius: 10px;
+}
+.blog-img{
+    height:260px;
+    width:100%;
+    position: relative;
+}
+.blog-img img{
+     height:260px;
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+.blog-text{
+    height:300px;
+    width:100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.dec30{
+    height:45px;
+    width:30%;
+    bottom:-25px;
+    left:4%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--primary-color);
+    position: absolute;
+}
+.dec30 span{
+    color:var(--forth-color);
+    line-height: 45px;
+}
+.martin{
+    height:40px;
+    width:90%;
+    padding: 40px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.martin span{
+    color:var(--primary-color);
+}
+.martin p{
+    color:grey;
+}
+.driving{
+    font-size: 28px;
+    padding-left: 10px;
+    font-weight: 100;
+    word-spacing: 4px;
+}
+.driving:hover{
+    color:var(--primary-color);
+}
+.driving-para{
+    padding-top: 10px;
+    padding-left: 10px;
+    line-height: 22px;
+    color:grey ;
+}
+.read-more{
+    color:var(--primary-color);
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 25px;
+}
+.read-more span {
+    color:var(--primary-color);
+    padding-top: 5px;
+}
+/* cental blog & news end */
+/* rent your car start */
+    .rent-car{
+       min-height:650px;
+       width: 100%;
+       padding-top: 40px;
+    }
+    .rent-img{
+        height: 600px;
+        width:100%;
+        background-image:url(../image/banner-1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .rent-inner{
+        height: 600px;
+        width: 100%;
+        background-color: rgba(10, 10, 10, 0.7);
+    }
+    .interest-rent{
+        height:600px;
+        width:100%;
+        display: flex;
+        justify-content:center;
+        align-items:flex-end;
+        flex-direction: column;
+
+    }
+    .rent-heading{
+        color: var(--primary-color);
+        font-size:28px;
+        padding-right: 15px;   
+        font-weight:500;
+         letter-spacing: 1px;
+     }
+     .renting{
+         color: var(--ternary-color);
+        font-size:60px;
+        padding-right: 15px; 
+        letter-spacing: 3px;  
+        font-weight:100;
+     }
+     .rent-para{
+        color: var(--ternary-color);
+        letter-spacing: 2px;
+        padding-right: 15px;
+        font-weight: 200;
+        font-size: 24px;
+        padding-top: 10px;
+     }
+     .rent-box{
+        padding-top: 30px;
+        height: 80px;
+        width:35%;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+         justify-content:center;
+     }
+     .rent-msg{
+        height: 55px;
+        width:40%;
+        background-color: var(--secondary-color);
+          padding-right: 15px;
+          border-radius: 40px;
+     }
+     .rent-msg a{
+        font-size: 20px;
+        font-weight:400;
+        line-height: 55px;
+     }
+     .rent-contact{
+         height: 55px;
+        width:40%;
+        background-color: var(--primary-color);
+          padding-right: 15px;
+          border-radius: 40px;
+     }
+      .rent-contact a{
+        font-size: 20px;
+        font-weight:400;
+        line-height: 50px;
+     }
+
+/* rent your car end */
+/* clients review start */
+
+.client-review{
+    min-height: 540px;
+    width: 100%;
+}
+
+.review-top {
+    min-height: 230px;
+    width: 100%;
+    text-align: center;
+}
+
+.heading-review {
+    color: var(--secondary-color);
+    font-size: 50px;
+    padding-top: 60px;
+    padding-bottom: 5px;
+}
+
+.heading-review span {
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+.heading-para {
+    width: 65%;
+    margin: auto;
+    line-height: 23px;
+}
+.review-bottom{
+    min-height:260px;
+    width: 100%;
+   
+     display:flex;
+     justify-content: space-between;
+    
+}
+.person-card{
+    height:250px;
+    width:48%;
+ 
+    border:1px solid black;
+      border-radius: 10px;
+}
+.card-top{
+    width:100%;
+    height:140px;
+    background-color: rgb(239, 239, 239);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+.girl-icon{
+    height: 140px;
+    width:22%;
+     padding-left: 20px;
+    padding-top: 20px;
+}
+.girl-pic{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+   
+}
+.girl-pic img{
+     height:80px;
+    width:80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.girl-detail{
+    height: 140px;
+    width:78%;
+   
+
+}
+.girl-detail h3{
+    color: black;
+    font-size: 25px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+.girl-detail p{
+    color: rgb(80, 80, 80);
+    padding-top:8px;
+}
+.girl-detail i{
+    color: var(--primary-color);
+    padding-top:12px;
+
+}
+.star i{
+    color: grey;
+      padding-top:12px;
+}
+.card-bottom{
+    width:100%;
+    height:110px;
+   
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+/* clients review end */
+/* customer section start */
+.customer-support{
+    min-height: 740px;
+    width: 100%;
+  
+}
+.customer-top {
+    min-height: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.heading-customer{
+    color: var(--secondary-color);
+    font-size: 50px;
+    padding-top: 60px;
+    padding-bottom: 5px;
+}
+
+.heading-customer span {
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+.customer-para{
+    width: 65%;
+    margin: auto;
+    line-height: 23px;
+}
+.customer-para a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.customer-bottom{
+    width: 100%;
+    height:510px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.team-item{
+    height:480px;
+    width:24%;
+    background-color:rgb(239, 239, 239);
+    display: flex;
+    padding-left: 12px;
+     border-radius:10px;
+    
+}
+.team-item:hover{
+    background-color: var(--secondary-color);
+
+}
+.image-div{
+    height:360px;
+   width:100%;
+   position: relative;
+   bottom:60px;
+  
+}
+.imae-div img{
+   height:360px;
+   width:70%;
+   object-fit: cover;
+    position: absolute;
+    border-radius: 20px;
+    
+}
+.customer-heading{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.pro{
+    color:var(--forth-color);
+     text-align: center;
+      letter-spacing: 1px;
+      padding-top: 5px;
+}
+.rent-social{
+    width:100%;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.rent-social i{
+    color: var(--primary-color);
+    font-size: 18px;
+}
+  
+/* customer section end */
+
+/* contact-us section start */
+.contact-bottom{
+    min-height:250px;
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-card{
+    height:210px;
+    width: 22%;
+     background-color:rgb(239, 239, 239);
+     border-radius: 10px;
+}
+.contact-box{
+    height:110px;
+    width: 100%;
+    padding-top:15px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-divi{
+    height:95px;
+    width:35%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     animation-duration: 5s;
+    animation-name: circle;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes circle {
+    0% {
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 25%;
+        border-bottom-left-radius: 35%;
+        border-top-left-radius: 50%;
+    }
+
+    30% {
+        border-top-right-radius: 25%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 35%;
+        border-top-left-radius: 50%;
+    }
+
+    60% {
+        border-top-right-radius: 25%;
+        border-bottom-right-radius: 35%;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 50%;
+    }
+
+    100% {
+        border-top-right-radius: 25%;
+        border-bottom-right-radius: 35%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 0%;
+    }
+}
+.icon-divi i{
+    color:var(--secondary-color);
+    font-size: 35px;
+}
+.contact-heading{
+    height:100px;
+    width: 100%;
+    
+     display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.address{
+    color: black;
+    font-size: 22px;
+    padding-top:13px;
+}
+.address-1{
+    color: rgb(73, 72, 72);
+    padding-top: 5px;
+}
+/* contact-us section end */
+/* mapping section start */
+    .map{
+         height:360px;
+        width: 100%;
+        border: 2px solid var(--secondary-color);
+        border-radius: 10px;
+    }
+    .map iframe{
+        height: 360px;
+        width: 100%;
+        border: 2px solid var(--secondary-color);
+        border-radius: 10px;
+    }
+/* mapping section end */
+
+/* footer section start */
+.foot-1 {
+    min-height: 450px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-top: 30px;
+}
+
+.content-1 {
+    min-height: 450px;
+    width: 25%;
+
+}
+
+.content-1 h3 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    color: var(--ternary-color);
+    font-size: 28px;
+}
+
+.content-1 p {
+    color: var(--forth-color);
+
+    width: 95%;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.search {
+    height: 55px;
+    width: 95%;
+    position: relative;
+
+}
+
+.search-input {
+    height: 55px;
+    width: 95%;
+
+}
+
+.search-input input {
+    height: 55px;
+    width: 95%;
+    border-radius: 40px;
+    border: 2px solid var(--ternary-color);
+    padding: 0px 20px;
+}
+
+.search .search-btn {
+    height: 55px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search .search-btn input {
+    height: 45px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: var(--secondary-color);
+    border: 0px;
+}
+
+.links {
+    padding: 10px 0px;
+}
+
+.links span {
+    padding-left: 5px;
+
+}
+
+.links .left-sign {
+    font-size: 14px;
+}
+
+.content-1 h4 {
+    color: var(--forth-color);
+}
+
+.content-1 h5 {
+    color: var(--ternary-color);
+    padding-top: 7px;
+}
+
+.content-1 i {
+    color: var(--forth-color);
+
+}
+
+.content-1 a {
+    text-decoration: none;
+    color: var(--forth-color);
+
+}
+
+.social-div {
+    height: 63px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.fb {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: rgb(84, 84, 162);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fb i {
+    color: var(--ternary-color);
+    font-size: 25px;
+
+}
+
+.foot-2 {
+    height: 80px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-top: 1px solid grey;
+}
+
+.foot-2 h6 {
+    font-size: 18px;
+    line-height: 80px;
+    color: var(--forth-color);
+}
+
+.foot-2 a {
+    font-size: 18px;
+    color: white;
+
+}
+/* footer section end */
