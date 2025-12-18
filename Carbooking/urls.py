@@ -27,4 +27,10 @@ urlpatterns = [
      path('pages/',views.PagesPage),
     path('contact/',views.ContactPage),
 
+    path('ourfeature/',views.ourfeaturePage),
+    path('ourcars/',views.ourcarsPage),
+    path('ourteam/',views.ourteamPage),
+    path('testimonial/',views.testimonialPage),
+    path('numpage/',views.numpagePage),
+
 ]

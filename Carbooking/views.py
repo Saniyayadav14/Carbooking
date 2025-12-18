@@ -36,3 +36,18 @@ def PagesPage(request):
 
 def ContactPage(request):
     return render(request,"contact.html")
+
+def ourfeaturePage(request):
+    return render(request,"ourfeature.html")
+
+def ourcarsPage(request):
+    return render(request,"ourcars.html")
+
+def ourteamPage(request):
+    return render(request,"ourteam.html")
+
+def testimonialPage(request):
+    return render(request,"testimonial.html")
+
+def numpagePage(request):
+    return render(request,"numpage.html")

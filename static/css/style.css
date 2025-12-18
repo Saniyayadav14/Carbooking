@@ -90,7 +90,14 @@ a {
     width: 100%;
     background-color: white;
     border-bottom: 1px solid grey;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo a {
@@ -98,22 +105,53 @@ a {
     font-size: 2.3em;
     color: var(--primary-color);
     font-weight: bold;
-    line-height: 80px;
+}
+.navbar{
+    display: flex;
 
 }
+.navbar a {
+      color:var(--secondary-color);
+      
+  }
 
-.navbar nav a {
-    text-decoration: none;
-    margin: 0px 20px;
-    color: var(--secondary-color);
-    font-weight: bold;
+  .navbar ul {
+      list-style: none;
+      padding-top: 10px;
+      font-size: 18px;
+        display: flex;
+        gap: 20px;
+  }
 
-}
+  ul li {
+      
+      padding: 10px 8px;
+      position: relative;
+  }
 
-.navbar nav a:hover {
-    color: var(--primary-color);
-}
+  ul li:hover {
+      color:var(--primary-color);
+  }
 
+  ul li ul {
+      list-style: none;
+      position: absolute;
+      left: -10px;
+      top: 35px; 
+     display: flex;
+    
+  }
+
+  ul li ul li {
+      display: none;
+       width:150px; 
+      
+  }
+
+  ul li:hover ul li {
+      display: block;
+      
+  }
 .get-start {
     height: 50px;
     width: 10%;
@@ -1790,6 +1828,67 @@ a {
         border-radius: 10px;
     }
 /* mapping section end */
+
+/* 404 page section start */
+    .numpage{
+        height:500px;
+        width: 100%;
+        background-color: rgb(239, 239, 239);
+         display: flex;
+        justify-content: center;
+    }
+    .num-box{
+        height: 500px;
+        width:40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .num-box h3{
+        color:black;
+        font-weight: bold;
+        font-size: 75px;
+        letter-spacing: 1px;
+    }
+    .num-box i{
+        color: var(--primary-color);
+        font-size:73px;
+       padding-top:13%;
+    }
+    .num-box h5{
+        font-size:40px;
+        color: black;
+        font-weight: 200;
+         letter-spacing: 1px;
+         word-spacing: 1px;
+    }
+    .num-box p{
+        color: black;
+        width: 90%;
+        text-align: center;
+        padding-top:10px;
+        padding-bottom:20px;
+    }
+    .get-home{
+        height:50px;
+        width: 30%;
+        background-color: var(--primary-color);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .get-home:hover{
+        background-color: var(--secondary-color);
+        box-shadow: 0px 0px 7px black;
+    }
+    .get-home a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+/* 404 page section end */
 
 /* footer section start */
 .foot-1 {
