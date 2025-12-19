@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
 
 <body>
@@ -49,31 +52,31 @@
                 </div>
                 <div class="navbar">
                     <nav>
-                         <ul>
-                    <a href="index.html">
+                         <ul class="nav-list">
+                    <a href="{% url 'home' %}">
                         <li>Home</li>
                     </a>
-                    <a href="about.html">
+                    <a href="{% url 'about' %}">
                         <li>About</li>
                     </a>
-                    <a href="service.html">
+                    <a href="{% url 'service' %}">
                         <li>Service</li>
                     </a>
-                    <a href="blog.html">
+                    <a href="{% url 'blog' %}">
                         <li>Blog</li>
                     </a>
-                    <a href="pages.html">
+                  
                         <li>Pages
                             <ul>
-                                <a href="ourfeature.html"><li>Our Features</li></a>
-                                <a href="ourcars.html"><li>Our Cars</li></a>
-                                <a href="ourteam.html"><li>Our Team</li></a>
-                                <a href="testimonial.html"><li>Testimonial</li></a>
-                                <a href="404pages.html"><li>404 Pages</li></a>
+                                <a href="{% url 'ourfeature' %}"><li>Our Features</li></a>
+                                <a href="{% url 'ourcars' %}"><li>Our Cars</li></a>
+                                <a href="{% url 'ourteam' %}"><li>Our Team</li></a>
+                                <a href="{% url 'testimonial' %}"><li>Testimonial</li></a>
+                                <a href="{% url 'numpage' %}"><li>404 Pages</li></a>
                             </ul>
                         </li>
-                    </a>
-                    <a href="https://themewagon.github.io/eNno/#contact">
+                   
+                    <a href="{% url 'contact' %}">
                         <li>Contact</li>
                     </a>
                 </ul>

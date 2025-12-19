@@ -20,17 +20,16 @@ from Carbooking import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.HomePage),
-     path('about/',views.AboutPage),
-    path('service/',views.ServicePage),
-     path('blog/',views.BlogPage),
-     path('pages/',views.PagesPage),
-    path('contact/',views.ContactPage),
+    path('',views.HomePage, name="home"),
+     path('about/',views.AboutPage, name="about"),
+    path('service/',views.ServicePage, name="service"),
+     path('blog/',views.BlogPage, name="blog"),
+    path('contact/',views.ContactPage, name="contact"),
 
-    path('ourfeature/',views.ourfeaturePage),
-    path('ourcars/',views.ourcarsPage),
-    path('ourteam/',views.ourteamPage),
-    path('testimonial/',views.testimonialPage),
-    path('numpage/',views.numpagePage),
+    path('ourfeature/',views.ourfeaturePage, name="ourfeature"),
+    path('ourcars/',views.ourcarsPage, name="ourcars"),
+    path('ourteam/',views.ourteamPage, name="ourteam"),
+    path('testimonial/',views.testimonialPage, name="testimonial"),
+    path('numpage/',views.numpagePage, name="numpage"),
 
 ]

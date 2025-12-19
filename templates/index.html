@@ -1,830 +1,846 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <main>
-        <!-- hero section start -->
-        <section class="hero">
-            <div class="inner">
-                <div class="overlay">
-                    <div class="hero-main">
-                        <div class="hero-content">
-                            <h1>Get 15% Off your Rental Plan your trip now</h1>
-                            <h4>Treat yourself in USA</h4>
-                        </div>
-                        <div class="hero-form">
-                            <div class="car-form">
-                                <h3>CONTINUE CAR RESERVATION</h3>
-                                <form>
-                                    <select class="selection">
-                                        <option value="">Select Your car Type</option>
-                                        <option value="">VW Golf VII</option>
-                                        <option value="">Audi A1 S-line</option>
-                                        <option value="">Toyota Camry</option>
-                                        <option value="">BMW 320 Modernline</option>
+<main>
+    <!-- hero section start -->
+    <section class="hero">
+        <div class="inner">
+            <div class="overlay">
+                <div class="hero-main">
+                    <div class="hero-content">
+                        <h1>Get 15% Off your Rental Plan your trip now</h1>
+                        <h4>Treat yourself in USA</h4>
+                    </div>
+                    <div class="hero-form">
+                        <div class="car-form">
+                            <h3>CONTINUE CAR RESERVATION</h3>
+                            <form>
+                                <select class="selection">
+                                    <option value="">Select Your car Type</option>
+                                    <option value="">VW Golf VII</option>
+                                    <option value="">Audi A1 S-line</option>
+                                    <option value="">Toyota Camry</option>
+                                    <option value="">BMW 320 Modernline</option>
+                                </select>
+                                <div class="input-group">
+                                    <div class="pick-up">
+                                        <span><i class="fa-solid fa-location-dot"></i>
+                                            Pick Up</span>
+                                    </div>
+                                    <input type="text" placeholder="Enter a City or Airport">
+                                </div>
+                                <h4 class="form-heading">Need a Different drop-off location</h4>
+                                <div class="input-group">
+                                    <div class="pick-up">
+                                        <span><i class="fa-solid fa-location-dot"></i>
+                                            Drop Off</span>
+                                    </div>
+                                    <input type="text" placeholder="Enter a City or Airport">
+                                </div>
+
+                                <div class="input-group1">
+                                    <div class="pick-up1">
+                                        <span><i class="fa-solid fa-calendar-days"></i>
+                                            Pick Up</span>
+                                    </div>
+                                    <input type="date" placeholder="dd-mm-yy">
+                                    <select class="selection1">
+                                        <option value="time">12:00AM</option>
+                                        <option value="time">1:00AM</option>
+                                        <option value="time">2:00AM</option>
+                                        <option value="time">3:00AM</option>
+                                        <option value="time">4:00AM</option>
                                     </select>
-                                    <div class="input-group">
-                                        <div class="pick-up">
-                                            <span><i class="fa-solid fa-location-dot"></i>
-                                                Pick Up</span>
-                                        </div>
-                                        <input type="text" placeholder="Enter a City or Airport">
-                                    </div>
-                                    <h4 class="form-heading">Need a Different drop-off location</h4>
-                                    <div class="input-group">
-                                        <div class="pick-up">
-                                            <span><i class="fa-solid fa-location-dot"></i>
-                                                Drop Off</span>
-                                        </div>
-                                        <input type="text" placeholder="Enter a City or Airport">
-                                    </div>
-
-                                    <div class="input-group1">
-                                        <div class="pick-up1">
-                                            <span><i class="fa-solid fa-calendar-days"></i>
-                                                Pick Up</span>
-                                        </div>
-                                        <input type="date" placeholder="dd-mm-yy">
-                                        <select class="selection1">
-                                            <option value="time">12:00AM</option>
-                                            <option value="time">1:00AM</option>
-                                            <option value="time">2:00AM</option>
-                                            <option value="time">3:00AM</option>
-                                            <option value="time">4:00AM</option>
-                                        </select>
 
 
-                                    </div>
+                                </div>
 
-                                    <div class="input-group1">
-                                        <div class="pick-up1">
-                                            <span><i class="fa-solid fa-calendar-days"></i>
-                                                Drop Up</span>
-                                        </div>
-                                        <input type="date" placeholder="dd-mm-yy">
-                                        <select class="selection1">
-                                            <option value="time">12:00AM</option>
-                                            <option value="time">1:00AM</option>
-                                            <option value="time">2:00AM</option>
-                                            <option value="time">3:00AM</option>
-                                            <option value="time">4:00AM</option>
-                                        </select>
+                                <div class="input-group1">
+                                    <div class="pick-up1">
+                                        <span><i class="fa-solid fa-calendar-days"></i>
+                                            Drop Up</span>
                                     </div>
-                                    <div class="book-now">
-                                        <input type="submit" value="Book Now">
-                                    </div>
+                                    <input type="date" placeholder="dd-mm-yy">
+                                    <select class="selection1">
+                                        <option value="time">12:00AM</option>
+                                        <option value="time">1:00AM</option>
+                                        <option value="time">2:00AM</option>
+                                        <option value="time">3:00AM</option>
+                                        <option value="time">4:00AM</option>
+                                    </select>
+                                </div>
+                                <div class="book-now">
+                                    <input type="submit" value="Book Now">
+                                </div>
 
-                                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- cental feature start -->
+    <section class="cental-feature">
+        <div class="feature">
+            <h2 class="feature-heading"><span>Booking</span> Features</h2>
+            <p class="feature-discription">A central feature of a car is its engine, which serves as the heart of the
+                vehicle. The engine converts fuel (such as petrol, diesel, or electricity in electric cars) into energy
+                that powers the car and allows it to move. Without the engine, a car cannot operate.</p>
+        </div>
+        <div class="overlay">
+            <div class="feature-content-box">
+                <div class="first-class">
+                    <div class="class-icon">
+                        <div class="trophy">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                    </div>
+                    <div class="class-para">
+                        <h3 class="class-service">First Class services</h3>
+                        <p class="service-detail">At that time, cars were new and often unreliable, so they required
+                            frequent maintenance and repairs. Early car services mainly focused on basic tasks such as
+                            fixing engines, changing oil etc.</p>
+                    </div>
+                </div>
+                <div class="first-class">
+                    <div class="class-icon">
+                        <div class="trophy">
+                            <i class="fa-solid fa-road"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="class-para">
+                        <h3 class="class-service">24/7 road assistance</h3>
+                        <p class="service-detail">Central Car offers 24/7 road assistance as an important service for
+                            all its customers. This means help is available any time of the day or night, every day of
+                            the year, whether it's early morning, late at night, weekends, or holidays. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-content-box">
+                <img src="{% static 'image/car-1.png' %}" alt="car-1">
+            </div>
+
+
+            <div class="feature-content-box">
+                <div class="first-class">
+
+                    <div class="class-para">
+                        <h3 class="class-service1">Quality at Minimum</h3>
+                        <p class="service-detail1">At a minimum, a good-quality car should provide essential safety,
+                            reliability, comfort, and practicality. Safety features are the most important and should
+                            include at least driver and front passenger airbags, ABS with EBD, seatbelts for all
+                            passengers.</p>
+                    </div>
+                    <div class="class-icon">
+                        <div class="trophy">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-class">
+
+                    <div class="class-para">
+                        <h3 class="class-service1">Free Pick-up & Drop-Off</h3>
+                        <p class="service-detail1">this is for your car is a service many modern
+                            workshops & car-servicing companies offer so you don't have to drive your car to the
+                            garage yourself they collect your car from your home, service or repair it, and then
+                            return it back to you, usually at no extra cost if you book through them.</p>
+                    </div>
+                    <div class="class-icon">
+                        <div class="trophy">
+                            <i class="fa-solid fa-map-pin"></i>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cental feature end -->
+
+    <!-- cental about start -->
+    <section class="cental-about">
+        <div class="overlay">
+            <div class="cental-left">
+                <h2 class="about-heading">Cental<span> About</span></h2>
+                <p class="about-para">The central aspects of a car are the main qualities that define how good, safe,
+                    and useful it is. A car is primarily designed to provide safe and comfortable transportation, so
+                    safety features like airbags, brakes, and seatbelts are central to it.</p>
+
+                <div class="our-vision">
+                    <div class="vision-box">
+                        <div class="target">
+                            <div class="gol">
+                                <i class="fa-solid fa-bullseye"></i>
                             </div>
                         </div>
+                        <h4 class="vision-heading">Our Vision</h4>
+                        <p class="vision-para">It aims to build trust through professional care, transparency, and
+                            convenient service solutions.</p>
+                    </div>
+                    <div class="vision-box">
+                        <div class="target">
+                            <div class="gol">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                        </div>
+                        <h4 class="vision-heading">Our Mision</h4>
+                        <p class="vision-para">The mission of a car centre is to provide dependable and high-quality
+                            vehicle service at affordable prices.</p>
+                    </div>
+                </div>
+
+                <p class="cental-paragraph">A car centre is a place that provides complete care for vehicles, including
+                    servicing, repairs, inspections, and maintenance.
+                    Its main role is to keep cars safe, reliable, and in good condition by offering professional
+                    service, skilled technicians.</p>
+
+                <div class="experience">
+                    <div class="year-of">
+                        <h2 class="number-17">17</h2>
+                        <h5 class="topic">Years of experience</h5>
+                    </div>
+                    <div class="deatails">
+                        <ul type="none">
+                            <li class="right-tick">
+                                <i class="fa-solid fa-circle-check"></i><span>Vehicle servicing and maintenance</span>
+                            </li>
+                            <li class="right-tick">
+                                <i class="fa-solid fa-circle-check"></i><span> Repair and replacement of parts</span>
+                            </li>
+                            <li class="right-tick">
+                                <i class="fa-solid fa-circle-check"></i><span>Skilled technicians and proper
+                                    tools</span>
+                            </li>
+                            <li class="right-tick">
+                                <i class="fa-solid fa-circle-check"></i><span>Timely and cost-effective service</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="customer-detail">
+                    <div class="more-about">
+                        <div class="more-about-us">
+                            <a href="#">More About Us</a>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <div class="picture"></div>
+                        <div class="picture-detail">
+                            <h3 class="william">William Burgess</h3>
+                            <span class="career">Career Founder</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cental-left">
+                <div class="key-chain">
+                    <img src="{% static 'image/about-img.jpg' %}" alt="">
+                </div>
+                <div class="taxi">
+                    <div class="taxi-img">
+                        <img src="{% static 'image/about-img-1.jpg' %}" alt="">
                     </div>
 
                 </div>
-            </div>
 
-        </section>
-        <!-- cental feature start -->
-        <section class="cental-feature">
-            <div class="feature">
-                <h2 class="feature-heading"><span>Booking</span> Features</h2>
-                <p class="feature-discription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde inventore
-                    placeat porro odio et labore aliquid, sit enim! Quaerat, quas? Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Nam quisquam magni possimus tenetur molestias dicta.</p>
             </div>
+        </div>
+    </section>
+    <!-- cental about end -->
+
+    <!-- numbering of car start -->
+    <section class="numbering-car">
+        <div class="numbering-inner">
             <div class="overlay">
-                <div class="feature-content-box">
-                    <div class="first-class">
-                        <div class="class-icon">
-                            <div class="trophy">
-                                <i class="fa-solid fa-trophy"></i>
-                            </div>
-                        </div>
-                        <div class="class-para">
-                            <h3 class="class-service">First Class services</h3>
-                            <p class="service-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                                totam consequatur, illum
-                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
+                <div class="happy-client">
+                    <div class="icon-box">
+                        <div class="like-box">
+                            <i class="fa-solid fa-thumbs-up"></i>
                         </div>
                     </div>
-                    <div class="first-class">
-                        <div class="class-icon">
-                            <div class="trophy">
+                    <div class="icon-box1">
+                        <h4 class="number">829+</h4>
+                        <h5 class="number-para">Happy Clients</h5>
+                    </div>
+                </div>
+                <div class="happy-client">
+                    <div class="icon-box">
+                        <div class="like-box">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="icon-box1">
+                        <h4 class="number">56+</h4>
+                        <h5 class="number-para">Number of cars</h5>
+                    </div>
+                </div>
+                <div class="happy-client">
+                    <div class="icon-box">
+                        <div class="like-box">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="icon-box1">
+                        <h4 class="number">127+</h4>
+                        <h5 class="number-para">Car Center</h5>
+                    </div>
+                </div>
+                <div class="happy-client">
+                    <div class="icon-box">
+                        <div class="like-box">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="icon-box1">
+                        <h4 class="number">589+</h4>
+                        <h5 class="number-para">Total kilometers</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- numbering of car end -->
+    <!-- cental service start -->
+    <section class="cental-service">
+        <div class="cental-topic">
+            <h3 class="topic-service">Cental<span> Services</span></h3>
+            <p class="topic-para">Central service refers to the main or core service facility that provides complete and
+                organized support for vehicles or customers. In the context of a car centre, central service ensures
+                proper vehicle maintenance, repairs, inspections, and customer support under one system.</p>
+        </div>
+
+        <div class="overlay">
+            <div class="car-services">
+                <div class="car-services1">
+                    <div class="car-s">
+                        <div class="phone">
+                            <div class="phone-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="phone-text">
+                            <h3 class="phone-heading">
+                                Phone Reservation
+                            </h3>
+                            <p class="phone-para">
+                                Central service of phone reservation allows customers to book or schedule services
+                                through a single contact number.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="car-s">
+                        <div class="phone">
+                            <div class="phone-icon">
+                                <i class="fa-solid fa-rectangle-list"></i>
+                            </div>
+                        </div>
+                        <div class="phone-text">
+                            <h3 class="phone-heading">
+                                Special Rate
+                            </h3>
+                            <p class="phone-para">
+                                Central service of special rate offers customers discounted or fixed pricing through a
+                                single, managed system.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="car-s">
+                        <div class="phone">
+                            <div class="phone-icon">
                                 <i class="fa-solid fa-road"></i>
-
                             </div>
-
                         </div>
-                        <div class="class-para">
-                            <h3 class="class-service">24/7 road assistance</h3>
-                            <p class="service-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                                totam consequatur, illum
-                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
+                        <div class="phone-text">
+                            <h3 class="phone-heading">
+                                On Way Rantel
+                            </h3>
+                            <p class="phone-para">
+                                Central service of On-Way Rental provides vehicles for temporary use at a fixed or
+                                hourly rate.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="feature-content-box">
-                    <img src="{% static 'image/car-1.png' %}" alt="car-1">
-                </div>
-
-
-                <div class="feature-content-box">
-                    <div class="first-class">
-
-                        <div class="class-para">
-                            <h3 class="class-service1">Quality at Minimum</h3>
-                            <p class="service-detail1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                                totam consequatur, illum
-                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
-                        </div>
-                        <div class="class-icon">
-                            <div class="trophy">
-                                <i class="fa-solid fa-tag"></i>
+                <div class="car-services2">
+                    <div class="car-s">
+                        <div class="phone">
+                            <div class="phone-icon">
+                                <i class="fa-solid fa-umbrella"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="first-class">
-
-                        <div class="class-para">
-                            <h3 class="class-service1">Free Pick-up & Drop-Off</h3>
-                            <p class="service-detail1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                                totam consequatur, illum
-                                est mollitia cumque maxime necessitatibus accusantium ex corporis assumenda libero!</p>
-                        </div>
-                        <div class="class-icon">
-                            <div class="trophy">
-                                <i class="fa-solid fa-map-pin"></i>
-
-
-                            </div>
-
+                        <div class="phone-text">
+                            <h3 class="phone-heading">
+                                Life Insurance
+                            </h3>
+                            <p class="phone-para">
+                                Central service of Life Insurance manages policies, claims, and customer support
+                                efficiently from a single point.
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- cental feature end -->
-
-        <!-- cental about start -->
-        <section class="cental-about">
-            <div class="overlay">
-                <div class="cental-left">
-                    <h2 class="about-heading">Cental<span> About</span></h2>
-                    <p class="about-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati
-                        ad
-                        nesciunt eum
-                        necessitatibus repellendus tempora, mollitia architecto eius dolore velit, natus nam cupiditate
-                        fuga
-                        cum tempore minus in! Perferendis laborum debitis quisquam assumenda explicabo exercitationem
-                        ratione voluptatem sit veritatis?</p>
-
-                    <div class="our-vision">
-                        <div class="vision-box">
-                            <div class="target">
-                                <div class="gol">
-                                    <i class="fa-solid fa-bullseye"></i>
-                                </div>
-                            </div>
-                            <h4 class="vision-heading">Our Vision</h4>
-                            <p class="vision-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-                                mollitia
-                                deserunt.</p>
-                        </div>
-                        <div class="vision-box">
-                            <div class="target">
-                                <div class="gol">
-                                    <i class="fa-solid fa-bullseye"></i>
-                                </div>
-                            </div>
-                            <h4 class="vision-heading">Our Mision</h4>
-                            <p class="vision-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-                                mollitia
-                                deserunt.</p>
-                        </div>
-                    </div>
-
-                    <p class="cental-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat eaque
-                        ipsam quia ea laborum nobis dicta quo, alias cum quos, eum aut quidem qui consequatur. Odio,
-                        officia
-                        perspiciatis assumenda magni, sunt, eligendi libero corrupti exercitationem rem laborum dicta?
-                        Aliquid.</p>
-
-                    <div class="experience">
-                        <div class="year-of">
-                            <h2 class="number-17">17</h2>
-                            <h5 class="topic">Years of experience</h5>
-                        </div>
-                        <div class="deatails">
-                            <ul type="none">
-                                <li class="right-tick">
-                                    <i class="fa-solid fa-circle-check"></i><span>Lorem ipsum dolor sit amet</span>
-                                </li>
-                                <li class="right-tick">
-                                    <i class="fa-solid fa-circle-check"></i><span> ipsum dolor sit amet consecteturm
-                                        elit.</span>
-                                </li>
-                                <li class="right-tick">
-                                    <i class="fa-solid fa-circle-check"></i><span> Ut reprehenderit suscipit
-                                        korem</span>
-                                </li>
-                                <li class="right-tick">
-                                    <i class="fa-solid fa-circle-check"></i><span>in magni illum magnam non saepe</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="customer-detail">
-                        <div class="more-about">
-                            <div class="more-about-us">
-                                <a href="#">More About Us</a>
-                            </div>
-                        </div>
-                        <div class="customer">
-                            <div class="picture"></div>
-                            <div class="picture-detail">
-                                <h3 class="william">William Burgess</h3>
-                                <span class="career">Career Founder</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="cental-left">
-                    <div class="key-chain">
-                        <img src="{% static 'image/about-img.jpg' %}" alt="">
-                    </div>
-                    <div class="taxi">
-                        <div class="taxi-img">
-                             <img src="{% static 'image/about-img-1.jpg' %}" alt="">
-                            </div>
-                       
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- cental about end -->
-
-        <!-- numbering of car start -->
-        <section class="numbering-car">
-            <div class="numbering-inner">
-                <div class="overlay">
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">829+</h4>
-                            <h5 class="number-para">Happy Clients</h5>
-                        </div>
-                    </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-car"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">56+</h4>
-                            <h5 class="number-para">Number of cars</h5>
-                        </div>
-                    </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
+                    <div class="car-s">
+                        <div class="phone">
+                            <div class="phone-icon">
                                 <i class="fa-solid fa-building"></i>
                             </div>
                         </div>
-                        <div class="icon-box1">
-                            <h4 class="number">127+</h4>
-                            <h5 class="number-para">Car Center</h5>
+                        <div class="phone-text">
+                            <h3 class="phone-heading">
+                                City to City
+                            </h3>
+                            <p class="phone-para">
+                                Central service of City-to-City offers reliable and convenient intercity transportation
+                                for passengers.
+
+                            </p>
                         </div>
                     </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-clock"></i>
+                    <div class="car-s">
+                        <div class="phone">
+                            <div class="phone-icon">
+                                <i class="fa-solid fa-car"></i>
                             </div>
                         </div>
-                        <div class="icon-box1">
-                            <h4 class="number">589+</h4>
-                            <h5 class="number-para">Total kilometers</h5>
+                        <div class="phone-text">
+                            <h3 class="phone-heading">
+                                Free Rides
+                            </h3>
+                            <p class="phone-para">
+                                Central service of Free Rides offers complimentary transportation for customer
+                                convenience.
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-            </div>
-            </div>
-        </section>
-        <!-- numbering of car end -->
-        <!-- cental service start -->
-        <section class="cental-service">
-            <div class="cental-topic">
-                <h3 class="topic-service">Cental<span> Services</span></h3>
-                <p class="topic-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem
-                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
-            </div>
-
+    <!-- cental service end -->
+    <!-- vehicle categories start-->
+    <section class="vehicle-categories">
+        <div class="vehicle-top">
+            <h3 class="topic-vehicle">Vehicle<span> Categories</span></h3>
+            <p class="vehicle-para">In a car centre, vehicle categories help organize the types of vehicles they
+                service, rent, or sell based on size, purpose, and features.Luxury cars
+                provide premium features and superior comfort, while electric vehicles require specialized servicing for
+                their battery systems.</p>
+        </div>
+        <div class="vehicle-bottom">
             <div class="overlay">
-                <div class="car-services">
-                    <div class="car-services1">
-                        <div class="car-s">
-                            <div class="phone">
-                                <div class="phone-icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                            </div>
-                            <div class="phone-text">
-                                <h3 class="phone-heading">
-                                    Phone Reservation
-                                </h3>
-                                <p class="phone-para">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
-                                    voluptatem ipsum dolor sit amet vitae Fuga ut soluta.
-                                </p>
-                            </div>
+                <div class="vehicle-box">
+                    <div class="vehicle-inner">
+                        <div class="vehicle-car">
+                            <img src="{% static 'image/car-4.png' %}" alt="car-4">
                         </div>
-                        <div class="car-s">
-                            <div class="phone">
-                                <div class="phone-icon">
-                                    <i class="fa-solid fa-rectangle-list"></i>
-                                </div>
+                        <div class="vehicle-topic">
+                            <h4 class="hyundai">Hyundai Kona Electric</h4>
+                            <p class="review">4.8 Review
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="price-box">
+                                <span>$187:00/Day</span>
                             </div>
-                            <div class="phone-text">
-                                <h3 class="phone-heading">
-                                    Special Rate
-                                </h3>
-                                <p class="phone-para">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga elit. voluptatem
-                                    ipsum dolor sit amet vitae Fuga ut soluta.
-                                </p>
+                            <div class="icon-txt">
+                                <P><i class="fa-solid fa-users"></i>4Seat</P>
+                                <P><i class="fa-solid fa-car"></i>AT/MT</P>
+                                <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
                             </div>
-                        </div>
-                        <div class="car-s">
-                            <div class="phone">
-                                <div class="phone-icon">
-                                    <i class="fa-solid fa-road"></i>
-                                </div>
+                            <div class="icon-txt1">
+                                <P><i class="fa-solid fa-car"></i>2015</P>
+                                <P><i class="fa-solid fa-gears"></i>AUTO</P>
+                                <P><i class="fa-solid fa-road"></i>27K</P>
                             </div>
-                            <div class="phone-text">
-                                <h3 class="phone-heading">
-                                    On Way Rantel
-                                </h3>
-                                <p class="phone-para">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit.
-                                    voluptatem ipsum dolor sit amet vitae Fuga ut soluta.
-                                </p>
+
+                            <div class="booking-now">
+                                <a href="#">Book Now</a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="car-services2">
-                        <div class="car-s">
-                            <div class="phone">
-                                <div class="phone-icon">
-                                    <i class="fa-solid fa-umbrella"></i>
-                                </div>
-                            </div>
-                            <div class="phone-text">
-                                <h3 class="phone-heading">
-                                    Life Insurance
-                                </h3>
-                                <p class="phone-para">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas elit.
-                                    voluptatem ipsum dolor sit amet vitae Fuga ut soluta.
-                                </p>
-                            </div>
+                </div>
+                <div class="vehicle-box">
+                    <div class="vehicle-inner">
+                        <div class="vehicle-car">
+                            <img src="{% static 'image/car-1.png' %}" alt="car-4">
                         </div>
-                        <div class="car-s">
-                            <div class="phone">
-                                <div class="phone-icon">
-                                    <i class="fa-solid fa-building"></i>
-                                </div>
+                        <div class="vehicle-topic">
+                            <h4 class="hyundai">Mercedes Benz R3</h4>
+                            <p class="review">4.5 Review
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            <div class="price-box">
+                                <span>$99:00/Day</span>
                             </div>
-                            <div class="phone-text">
-                                <h3 class="phone-heading">
-                                    City to City
-                                </h3>
-                                <p class="phone-para">
-                                    Lorem, ipsum dolor sit adipisicing elit. Fuga voluptas adipisicing elit. voluptatem
-                                    ipsum dolor sit amet vitae Fuga ut soluta.
-                                </p>
+                            <div class="icon-txt">
+                                <P><i class="fa-solid fa-users"></i>4Seat</P>
+                                <P><i class="fa-solid fa-car"></i>AT/MT</P>
+                                <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
                             </div>
+                            <div class="icon-txt1">
+                                <P><i class="fa-solid fa-car"></i>2015</P>
+                                <P><i class="fa-solid fa-gears"></i>AUTO</P>
+                                <P><i class="fa-solid fa-road"></i>27K</P>
+                            </div>
+
+                            <div class="booking-now">
+                                <a href="#">Book Now</a>
+                            </div>
+
                         </div>
-                        <div class="car-s">
-                            <div class="phone">
-                                <div class="phone-icon">
-                                    <i class="fa-solid fa-car"></i>
-                                </div>
+                    </div>
+                </div>
+                <div class="vehicle-box">
+                    <div class="vehicle-inner">
+                        <div class="vehicle-car">
+                            <img src="{% static 'image/car-2.png' %}" alt="car-4">
+                        </div>
+                        <div class="vehicle-topic">
+                            <h4 class="hyundai">Toyota Corolla Cross</h4>
+                            <p class="review">3.5 Review
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            <div class="price-box">
+                                <span>$128:00/Day</span>
                             </div>
-                            <div class="phone-text">
-                                <h3 class="phone-heading">
-                                    Free Rides
-                                </h3>
-                                <p class="phone-para">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga elit. voluptatem
-                                    ipsum dolor sit amet vitae Fuga ut soluta.
-                                </p>
+                            <div class="icon-txt">
+                                <P><i class="fa-solid fa-users"></i>4Seat</P>
+                                <P><i class="fa-solid fa-car"></i>AT/MT</P>
+                                <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
                             </div>
+                            <div class="icon-txt1">
+                                <P><i class="fa-solid fa-car"></i>2015</P>
+                                <P><i class="fa-solid fa-gears"></i>AUTO</P>
+                                <P><i class="fa-solid fa-road"></i>27K</P>
+                            </div>
+
+                            <div class="booking-now">
+                                <a href="#">Book Now</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <!-- vehicle categories end-->
 
-        <!-- cental service end -->
-        <!-- vehicle categories start-->
-        <section class="vehicle-categories">
-            <div class="vehicle-top">
-                <h3 class="topic-vehicle">Vehicle<span> Categories</span></h3>
-                <p class="vehicle-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                    exercitationem
-                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
+      <!-- cental process start -->
+    <section class="cental-process">
+        <div class="process-inner">
+            <div class="cental-top">
+                <h2 class="process-heading">Cental <span>Process</span></h2>
+                <p class="process-para">The central processes of a car centre encompass all the main operations that ensure smooth functioning and customer satisfaction. These include service booking and appointment management through phone, app, or website, vehicle pick-up and drop-off, and thorough inspection and diagnosis to identify maintenance needs or issues.</p>
             </div>
-            <div class="vehicle-bottom">
+            <div class="process-card">
                 <div class="overlay">
-                    <div class="vehicle-box">
-                        <div class="vehicle-inner">
-                            <div class="vehicle-car">
-                                <img src="{% static 'image/car-4.png' %}" alt="car-4">
-                            </div>
-                            <div class="vehicle-topic">
-                                <h4 class="hyundai">Hyundai Kona Electric</h4>
-                                <p class="review">4.8 Review
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                                <div class="price-box">
-                                    <span>$187:00/Day</span>
-                                </div>
-                                <div class="icon-txt">
-                                    <P><i class="fa-solid fa-users"></i>4Seat</P>
-                                    <P><i class="fa-solid fa-car"></i>AT/MT</P>
-                                    <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
-                                </div>
-                                <div class="icon-txt1">
-                                    <P><i class="fa-solid fa-car"></i>2015</P>
-                                    <P><i class="fa-solid fa-gears"></i>AUTO</P>
-                                    <P><i class="fa-solid fa-road"></i>27K</P>
-                                </div>
-
-                                <div class="booking-now">
-                                    <a href="#">Book Now</a>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="card-1">
+                        <h4 class="card-heading">Come in Contact</h4>
+                        <p class="card-para">Customer contact ensures smooth communication throughout the car service process.</p>
+                          <div class="card-box">
+                            <span class="card-number">01.</span>
+                          </div>
                     </div>
-                    <div class="vehicle-box">
-                        <div class="vehicle-inner">
-                            <div class="vehicle-car">
-                                <img src="{% static 'image/car-1.png' %}" alt="car-4">
-                            </div>
-                            <div class="vehicle-topic">
-                                <h4 class="hyundai">Mercedes Benz R3</h4>
-                                <p class="review">4.5 Review
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <div class="price-box">
-                                    <span>$99:00/Day</span>
-                                </div>
-                                <div class="icon-txt">
-                                    <P><i class="fa-solid fa-users"></i>4Seat</P>
-                                    <P><i class="fa-solid fa-car"></i>AT/MT</P>
-                                    <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
-                                </div>
-                                <div class="icon-txt1">
-                                    <P><i class="fa-solid fa-car"></i>2015</P>
-                                    <P><i class="fa-solid fa-gears"></i>AUTO</P>
-                                    <P><i class="fa-solid fa-road"></i>27K</P>
-                                </div>
-
-                                <div class="booking-now">
-                                    <a href="#">Book Now</a>
-                                </div>
-
-                            </div>
-                        </div>
+                  
+                    <div class="card-1">
+                         <h4 class="card-heading">Choose A Car</h4>
+                        <p class="card-para">Choosing a car in the central process means selecting the right vehicle based on the customer's needs.</p>
+                          <div class="card-box">
+                            <span class="card-number">02.</span>
+                          </div>
                     </div>
-                    <div class="vehicle-box">
-                        <div class="vehicle-inner">
-                            <div class="vehicle-car">
-                                <img src="{% static 'image/car-2.png' %}" alt="car-4">
-                            </div>
-                            <div class="vehicle-topic">
-                                <h4 class="hyundai">Toyota Corolla Cross</h4>
-                                <p class="review">3.5 Review
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </p>
-                                <div class="price-box">
-                                    <span>$128:00/Day</span>
-                                </div>
-                                <div class="icon-txt">
-                                    <P><i class="fa-solid fa-users"></i>4Seat</P>
-                                    <P><i class="fa-solid fa-car"></i>AT/MT</P>
-                                    <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
-                                </div>
-                                <div class="icon-txt1">
-                                    <P><i class="fa-solid fa-car"></i>2015</P>
-                                    <P><i class="fa-solid fa-gears"></i>AUTO</P>
-                                    <P><i class="fa-solid fa-road"></i>27K</P>
-                                </div>
-
-                                <div class="booking-now">
-                                    <a href="#">Book Now</a>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="card-1">
+                         <h4 class="card-heading">Enjoy Driving</h4>
+                        <p class="card-para">In the central process,enjoying driving is facilitated through a test drive. </p>
+                          <div class="card-box">
+                            <span class="card-number">03.</span>
+                          </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- vehicle categories end-->
-        <!-- cental blog & news start-->
-        <section class="vehicle-categories">
-            <div class="vehicle-top">
-                <h3 class="topic-vehicle">Cental <span>Blog & News</span></h3>
-                <p class="vehicle-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                    exercitationem
-                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
+
+        </div>
+    </section>
+    <!-- cental process end -->
+
+    <!-- cental blog & news start-->
+    <section class="vehicle-categories">
+        <div class="vehicle-top">
+            <h3 class="topic-vehicle">Cental <span>Blog & News</span></h3>
+            <p class="vehicle-para">Central Blog & News in a car centre is a platform where the centre shares the latest
+                updates, tips, and information related to vehicles and automotive services. It may include news about
+                new car models, maintenance advice, promotions, safety tips, industry trends, and upcoming offers.</p>
+        </div>
+        <div class="overlay">
+            <div class="blog-bottom">
+                <div class="blog-rental">
+                    <div class="blog-img">
+                        <img src="{% static 'image/blog-1.jpg' %}" alt="blog-1">
+                        <div class="dec30">
+                            <span>30 Dec 2025</span>
+                        </div>
+                    </div>
+                    <div class="blog-text">
+                        <div class="martin">
+                            <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
+                            <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
+                        </div>
+                        <h2 class="driving">Rental Cars how to check
+                            driving fines?
+                        </h2>
+                        <p class="driving-para">To check driving fines for rental cars, you can use the official traffic
+                            or transport department website  mobile app of the city or state, where entering the
+                            vehicle number will show any pending fines.</p>
+                        <h5 class="read-more">Read More
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="blog-rental">
+                    <div class="blog-img">
+                        <img src="{% static 'image/blog-2.jpg' %}" alt="blog">
+                        <div class="dec30">
+                            <span>25 Dec 2025</span>
+                        </div>
+                    </div>
+                    <div class="blog-text">
+                        <div class="martin">
+                            <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
+                            <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
+                        </div>
+                        <h2 class="driving"> Rental cost of sport and other
+                            cars
+                        </h2>
+                        <p class="driving-para">The rental cost of cars varies by type, with sports cars generally priced higher due to performance and luxury features.
+                        Standard or economy cars are more affordable, making them suitable for everyday use and budget-conscious customers.</p>
+                        <h5 class="read-more">Read More
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="blog-rental">
+                    <div class="blog-img">
+                        <img src="{% static 'image/blog-3.jpg' %}" alt="blog-3">
+                        <div class="dec30">
+                            <span>27 Dec 2025</span>
+                        </div>
+                    </div>
+                    <div class="blog-text">
+                        <div class="martin">
+                            <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
+                            <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
+                        </div>
+                        <h2 class="driving"> Document required for car rental
+                        </h2>
+                        <p class="driving-para">To rent a car, you typically need a valid driving license and a government-issued ID proof.
+                    Some rental companies may also require a credit/debit card and proof of address for verification.</p>
+                        <h5 class="read-more">Read More
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </h5>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+    <!-- cental blog & news end -->
+    <!-- rent your car start -->
+    <section class="rent-car">
+        <div class="overlay">
+            <div class="rent-img">
+                <div class="rent-inner">
+                    <div class="interest-rent">
+                        <h3 class="rent-heading">Rent Your Car</h3>
+                        <h2 class="renting">Interested in Renting?</h2>
+                        <h5 class="rent-para">Dont't hesitate and send us a message.</h5>
+                        <div class="rent-box">
+                            <div class="rent-msg">
+                                <a href="#">Whatsapp</a>
+                            </div>
+                            <div class="rent-contact">
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- rent your car end -->
+
+    <!-- client review start -->
+    <section class="client-review">
+        <div class="review-top">
+            <h3 class="heading-review">Our Clients <span>Reviews</span></h3>
+            <p class="heading-para">Our clients consistently praise our reliable service, professional staff, and convenient solutions.They value the quality, trust, and customer-friendly experience we provide.They also value features like free pick-up and drop-off, flexible rental options, and attentive customer support, which make their experience seamless and trustworthy.</p>
+        </div>
+        <div class="review-bottom">
             <div class="overlay">
-                <div class="blog-bottom">
-                    <div class="blog-rental">
-                        <div class="blog-img">
-                            <img src="{% static 'image/blog-1.jpg' %}" alt="blog-1">
-                            <div class="dec30">
-                                <span>30 Dec 2025</span>
+                <div class="person-card">
+                    <div class="card-top">
+                        <div class="girl-icon">
+                            <div class="girl-pic">
+                                <img src="{% static 'image/team-1.jpg' %}" alt="team-1">
                             </div>
                         </div>
-                        <div class="blog-text">
-                            <div class="martin">
-                                <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
-                                <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
-                            </div>
-                            <h2 class="driving">Rental Cars how to check
-                                driving fines?
-                            </h2>
-                            <p class="driving-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla
-                                blanditiis quisquam, ex ut quis voluptates animi voluptatum, tenetur ullam rem in alias,
-                                quae officia.</p>
-                            <h5 class="read-more">Read More
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </h5>
+                        <div class="girl-detail">
+                            <h3>Person Name</h3>
+                            <p>Profession</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+
                         </div>
                     </div>
-                    <div class="blog-rental">
-                        <div class="blog-img">
-                            <img src="{% static 'image/blog-2.jpg' %}" alt="blog">
-                            <div class="dec30">
-                                <span>25 Dec 2025</span>
-                            </div>
-                        </div>
-                        <div class="blog-text">
-                            <div class="martin">
-                                <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
-                                <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
-                            </div>
-                            <h2 class="driving"> Rental cost of sport and other
-                                cars
-                            </h2>
-                            <p class="driving-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla
-                                blanditiis quisquam, ex ut quis voluptates animi voluptatum, tenetur ullam rem in
-                                alias,nulla blanditiis quisquam, ex ut quis quae officia.</p>
-                            <h5 class="read-more">Read More
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="blog-rental">
-                        <div class="blog-img">
-                            <img src="{% static 'image/blog-3.jpg' %}" alt="blog-3">
-                            <div class="dec30">
-                                <span>27 Dec 2025</span>
-                            </div>
-                        </div>
-                        <div class="blog-text">
-                            <div class="martin">
-                                <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
-                                <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
-                            </div>
-                            <h2 class="driving"> Document required for car rental
-                            </h2>
-                            <p class="driving-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla
-                                blanditiis quisquam, ex ut quis voluptates animi voluptatum,nulla blanditiis quisquam,
-                                ex ut
-                                quis tenetur ullam rem in alias, quae officia.</p>
-                            <h5 class="read-more">Read More
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </h5>
-                        </div>
+                    <div class="card-bottom">
+                        <p>Excellent service! My car was picked up on time, serviced efficiently, and returned in perfect condition.
+                            Very professional staff and transparent pricing. I trust them with all my vehicle maintenance needs.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        </section>
-        <!-- cental blog & news end -->
-        <!-- rent your car start -->
-        <section class="rent-car">
-            <div class="overlay">
-                <div class="rent-img">
-                    <div class="rent-inner">
-                        <div class="interest-rent">
-                            <h3 class="rent-heading">Rent Your Car</h3>
-                            <h2 class="renting">Interested in Renting?</h2>
-                            <h5 class="rent-para">Dont't hesitate and send us a message.</h5>
-                            <div class="rent-box">
-                                <div class="rent-msg">
-                                    <a href="#">Whatsapp</a>
-                                </div>
-                                <div class="rent-contact">
-                                    <a href="#">Contact Us</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- rent your car end -->
-
-        <!-- client review start -->
-        <section class="client-review">
-            <div class="review-top">
-                <h3 class="heading-review">Our Clients <span>Reviews</span></h3>
-                <p class="heading-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                    exercitationem
-                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
-            </div>
-            <div class="review-bottom">
-                <div class="overlay">
-                    <div class="person-card">
-                        <div class="card-top">
-                            <div class="girl-icon">
-                                <div class="girl-pic">
-                                    <img src="{% static 'image/team-1.jpg' %}" alt="team-1">
-                                </div>
-                            </div>
-                            <div class="girl-detail">
-                                <h3>Person Name</h3>
-                                <p>Profession</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <span class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus doloribus cumque,
-                                sunt quasi maiores enim reprehenderit minima quaerat expedita vel quis voluptate
-                                inventore recusandae.</p>
-                        </div>
-                    </div>
-                    <div class="person-card">
-                        <div class="card-top">
-                            <div class="girl-icon">
-                                <div class="girl-pic">
-                                    <img src="{% static 'image/team-2.jpg' %}" alt="team-1">
-                                </div>
-                            </div>
-                            <div class="girl-detail">
-                                <h3>Person Name</h3>
-                                <p>Profession</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-
-                                <span class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus doloribus cumque,
-                                sunt quasi maiores enim reprehenderit minima quaerat expedita vel quis voluptate
-                                inventore recusandae.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- client review end -->
-
-        <!-- customer support center  start-->
-        <section class="customer-support">
-            <div class="customer-top">
-                <h3 class="heading-customer">Customer<span> Support</span> Center</h3>
-                <p class="customer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                    exercitationem
-                    sint aliquam quod aspernatur voluptas harum magni, ex neque tempore? Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Quaerat, sed ullam! Modi, repellat. Maxime, tempora.</p>
-            </div>
-            <div class="customer-bottom">
-                <div class="overlay">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <div class="image-div">
-                                <img src="{%  static 'image/team-1.jpg' %}" alt="team-1">
-                            </div>
-                            <h3 class="customer-heading">Martin Doe</h3>
-                            <p class="pro">Profession</p>
-                            <div class="rent-social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
-
-                        </div>
-                      
-                    </div>
-                    <div class="team-item">
-                        <div class="team-img">
-                            <div class="image-div">
-                                <img src="{% static 'image/team-4.jpg' %}" alt="team-1">
-                            </div>
-                            <h3 class="customer-heading">Martin Doe</h3>
-                            <p class="pro">Profession</p>
-                            <div class="rent-social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="team-item">
-                        <div class="team-img">
-                            <div class="image-div">
-                                <img src="{% static 'image/team-3.jpg' %}" alt="team-1">
-                            </div>
-                            <h3 class="customer-heading">Martin Doe</h3>
-                            <p class="pro">Profession</p>
-                            <div class="rent-social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="team-item">
-                        <div class="team-img">
-                            <div class="image-div">
+                <div class="person-card">
+                    <div class="card-top">
+                        <div class="girl-icon">
+                            <div class="girl-pic">
                                 <img src="{% static 'image/team-2.jpg' %}" alt="team-1">
                             </div>
-                            <h3 class="customer-heading">Martin Doe</h3>
-                            <p class="pro">Profession</p>
-                            <div class="rent-social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
+                        </div>
+                        <div class="girl-detail">
+                            <h3>Person Name</h3>
+                            <p>Profession</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                            <span class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
 
                         </div>
-
+                    </div>
+                    <div class="card-bottom">
+                        <p>Friendly staff, well-maintained workshop, and genuine spare parts highly recommended!
+            Booking through their app was easy, and the customer support team was very helpful.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <!-- client review end -->
 
-        <!-- customer support center end-->
-        <!-- hero section end -->
-    </main>
-{% endblock  %}
+    <!-- customer support center  start-->
+    <section class="customer-support">
+        <div class="customer-top">
+            <h3 class="heading-customer">Customer<span> Support</span> Center</h3>
+            <p class="customer-para">It ensures smooth communication, answers questions about services, handles complaints, provides updates on bookings or repairs, and offers guidance before, during, and after vehicle service to ensure customer satisfaction.</p>
+        </div>
+        <div class="customer-bottom">
+            <div class="overlay">
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="image-div">
+                            <img src="{%  static 'image/team-1.jpg' %}" alt="team-1">
+                        </div>
+                        <h3 class="customer-heading">Martin Doe</h3>
+                        <p class="pro">Profession</p>
+                        <div class="rent-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
 
-   
+                    </div>
+
+                </div>
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="image-div">
+                            <img src="{% static 'image/team-4.jpg' %}" alt="team-1">
+                        </div>
+                        <h3 class="customer-heading">Martin Doe</h3>
+                        <p class="pro">Profession</p>
+                        <div class="rent-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="image-div">
+                            <img src="{% static 'image/team-3.jpg' %}" alt="team-1">
+                        </div>
+                        <h3 class="customer-heading">Martin Doe</h3>
+                        <p class="pro">Profession</p>
+                        <div class="rent-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="team-item">
+                    <div class="team-img">
+                        <div class="image-div">
+                            <img src="{% static 'image/team-2.jpg' %}" alt="team-1">
+                        </div>
+                        <h3 class="customer-heading">Martin Doe</h3>
+                        <p class="pro">Profession</p>
+                        <div class="rent-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- customer support center end-->
+    <!-- hero section end -->
+</main>
+{% endblock %}

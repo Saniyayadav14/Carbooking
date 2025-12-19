@@ -115,17 +115,17 @@ a {
       
   }
 
-  .navbar ul {
+  .navbar .nav-list{
       list-style: none;
-      padding-top: 10px;
       font-size: 18px;
         display: flex;
+        justify-content:center;
         gap: 20px;
   }
 
   ul li {
       
-      padding: 10px 8px;
+      padding: 6px 8px;
       position: relative;
   }
 
@@ -136,15 +136,15 @@ a {
   ul li ul {
       list-style: none;
       position: absolute;
-      left: -10px;
-      top: 35px; 
-     display: flex;
-    
+     top:30px;
+      left: 10px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
   }
 
   ul li ul li {
       display: none;
-       width:150px; 
+       width:130px; 
       
   }
 
@@ -244,7 +244,7 @@ a {
     height: 40px;
     border-radius: 10px;
     color: grey;
-
+    padding: 0px ;
 }
 
 .input-group {
@@ -555,7 +555,7 @@ a {
 .cental-left {
     min-height: 850px;
     width: 50%;
-
+    position: relative;
 }
 
 .about-heading {
@@ -795,28 +795,33 @@ a {
 .key-chain img {
     object-fit: cover;
     height: 650px;
-    width: 90%;
-    padding-left: 30px;
+    width: 92%;
+    padding-left: 40px;
     border-radius: 10px;
     position: relative;
 }
 
 .key-chain::after {
-    right: 82px;
+    right:0%;
     content: "";
-    height: 498px;
-    width: 6px;
+    height:505px;
+    width: 8px;
     background-color: var(--primary-color);
     position: absolute;
+    
 }
-
-.taxi-img img {
-    object-fit: cover;
+.taxi-img{
     position: absolute;
-    bottom:-215%;
+     bottom:0%;
     border-radius: 10px;
-    height: 350px;
-    right: 78px;
+    height:350px;
+    width: 82%;
+    left: 19%;
+}
+.taxi-img img {
+  width: 100%;
+  height: 100%;
+   border-radius: 10px;
 }
 
 /* cental about end */
