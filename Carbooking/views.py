@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from car_admin.models import Service,Cat,Blog,Review,Centalprocess,Centalfeatures,Numbering
 
 # def HomePage(request):
 #     return HttpResponse("Hello Welcome to Home Page")
@@ -20,16 +21,53 @@ from django.shortcuts import render
 #     return HttpResponse("Hello Welcome to Contact Page")
 
 def HomePage(request):
-    return render(request,"index.html")
+    serviceData=Service.objects.all()
+    CatData=Cat.objects.all()
+    BlogData=Blog.objects.all()
+    ReviewData=Review.objects.all()
+    CentalprocessData=Centalprocess.objects.all()
+    CentalfeaturesData=Centalfeatures.objects.all()
+    NumberingData=Numbering.objects.all()
+    data={
+        'service_show':serviceData,
+        'cat_show':CatData,
+        'blog_show':BlogData,
+        'review_show':ReviewData,
+        'Centalprocess_show':CentalprocessData,
+        'Centalfeatures_show':CentalfeaturesData,
+        'Numbering_show':NumberingData,
+    }
+    return render(request,"index.html",data)
 
 def AboutPage(request):
-    return render(request,"about.html")
+    NumberingData=Numbering.objects.all()
+    CentalprocessData=Centalprocess.objects.all()
+    data={
+        'Numbering_show':NumberingData,
+        'Centalprocess_show':CentalprocessData,
+    }
+    
+    return render(request,"about.html",data)
 
 def BlogPage(request):
-    return render(request,"blog.html")
+    BlogData=Blog.objects.all()
+    NumberingData=Numbering.objects.all()
+    data={
+        'blog_show':BlogData,
+        'Numbering_show':NumberingData,
+    }
+    return render(request,"blog.html",data)
 
 def ServicePage(request):
-    return render(request,"service.html")
+    serviceData=Service.objects.all()
+    NumberingData=Numbering.objects.all()
+    ReviewData=Review.objects.all()
+    data={
+        'service_show':serviceData,
+        'Numbering_show':NumberingData,
+        'review_show':ReviewData,
+    }
+    return render(request,"service.html",data)
 
 def PagesPage(request):
     return render(request,"pages.html")
@@ -38,16 +76,30 @@ def ContactPage(request):
     return render(request,"contact.html")
 
 def ourfeaturePage(request):
-    return render(request,"ourfeature.html")
+    NumberingData=Numbering.objects.all()
+    data={
+        'Numbering_show':NumberingData,
+    }
+    return render(request,"ourfeature.html",data)
 
 def ourcarsPage(request):
-    return render(request,"ourcars.html")
+    CatData=Cat.objects.all()
+    CentalprocessData=Centalprocess.objects.all()
+    data={
+        'cat_show':CatData,
+        'Centalprocess_show':CentalprocessData,
+    }
+    return render(request,"ourcars.html",data)
 
 def ourteamPage(request):
     return render(request,"ourteam.html")
 
 def testimonialPage(request):
-    return render(request,"testimonial.html")
+    ReviewData=Review.objects.all()
+    data={
+        'review_show':ReviewData,
+}
+    return render(request,"testimonial.html",data)
 
 def numpagePage(request):
     return render(request,"numpage.html")

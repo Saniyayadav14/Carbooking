@@ -97,60 +97,30 @@
     </section>
     <!-- cental feature end -->
      
-         <!-- numbering of car start -->
-        <section class="numbering-car">
-            <div class="numbering-inner">
-                <div class="overlay">
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">829+</h4>
-                            <h5 class="number-para">Happy Clients</h5>
+<!--numbering section start-->
+  <section class="numbering-car">
+        <div class="numbering-inner">
+            <div class="overlay">
+                {% for n in Numbering_show %}
+                <div class="happy-client">
+                    <div class="icon-box">
+                        <div class="like-box">
+                            <i class="{{ n.num_icon }}"></i>
                         </div>
                     </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-car"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">56+</h4>
-                            <h5 class="number-para">Number of cars</h5>
-                        </div>
-                    </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-building"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">127+</h4>
-                            <h5 class="number-para">Car Center</h5>
-                        </div>
-                    </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">589+</h4>
-                            <h5 class="number-para">Total kilometers</h5>
-                        </div>
+                    <div class="icon-box1">
+                        <h4 class="number">{{ n.num_counter }}</h4>
+                        <h5 class="number-para">{{ n.num_title }}</h5>
                     </div>
                 </div>
+            {% endfor %}
+            </div>
 
-            </div>
-            </div>
-        </section>
-        <!-- numbering of car end -->
+        </div>
+        </div>
+    </section>
+<!-- numbering section end-->
+
            <!-- rent your car start -->
         <section class="rent-car">
             <div class="overlay">

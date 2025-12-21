@@ -107,53 +107,22 @@
     <!-- cental about end -->
 
     <!-- numbering of car start -->
-    <section class="numbering-car">
+  <section class="numbering-car">
         <div class="numbering-inner">
             <div class="overlay">
+                {% for n in Numbering_show %}
                 <div class="happy-client">
                     <div class="icon-box">
                         <div class="like-box">
-                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="{{ n.num_icon }}"></i>
                         </div>
                     </div>
                     <div class="icon-box1">
-                        <h4 class="number">829+</h4>
-                        <h5 class="number-para">Happy Clients</h5>
+                        <h4 class="number">{{ n.num_counter }}</h4>
+                        <h5 class="number-para">{{ n.num_title }}</h5>
                     </div>
                 </div>
-                <div class="happy-client">
-                    <div class="icon-box">
-                        <div class="like-box">
-                            <i class="fa-solid fa-car"></i>
-                        </div>
-                    </div>
-                    <div class="icon-box1">
-                        <h4 class="number">56+</h4>
-                        <h5 class="number-para">Number of cars</h5>
-                    </div>
-                </div>
-                <div class="happy-client">
-                    <div class="icon-box">
-                        <div class="like-box">
-                            <i class="fa-solid fa-building"></i>
-                        </div>
-                    </div>
-                    <div class="icon-box1">
-                        <h4 class="number">127+</h4>
-                        <h5 class="number-para">Car Center</h5>
-                    </div>
-                </div>
-                <div class="happy-client">
-                    <div class="icon-box">
-                        <div class="like-box">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
-                    </div>
-                    <div class="icon-box1">
-                        <h4 class="number">589+</h4>
-                        <h5 class="number-para">Total kilometers</h5>
-                    </div>
-                </div>
+            {% endfor %}
             </div>
 
         </div>
@@ -245,7 +214,7 @@
     <!-- cental feature end -->
 
       <!-- cental process start -->
-    <section class="cental-process">
+   <section class="cental-process">
         <div class="process-inner">
             <div class="cental-top">
                 <h2 class="process-heading">Cental <span>Process</span></h2>
@@ -253,28 +222,16 @@
             </div>
             <div class="process-card">
                 <div class="overlay">
+                     {% for p in Centalprocess_show %}
                     <div class="card-1">
-                        <h4 class="card-heading">Come in Contact</h4>
-                        <p class="card-para">Customer contact ensures smooth communication throughout the car service process.</p>
+                        <h4 class="card-heading">{{ p.pro_title }}</h4>
+                        <p class="card-para">{{ p.pro_desc }}</p>
                           <div class="card-box">
-                            <span class="card-number">01.</span>
+                            <span class="card-number"> {{ p.pro_number }}</span>
                           </div>
                     </div>
                   
-                    <div class="card-1">
-                         <h4 class="card-heading">Choose A Car</h4>
-                        <p class="card-para">Choosing a car in the central process means selecting the right vehicle based on the customer's needs.</p>
-                          <div class="card-box">
-                            <span class="card-number">02.</span>
-                          </div>
-                    </div>
-                    <div class="card-1">
-                         <h4 class="card-heading">Enjoy Driving</h4>
-                        <p class="card-para">In the central process,enjoying driving is facilitated through a test drive. </p>
-                          <div class="card-box">
-                            <span class="card-number">03.</span>
-                          </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
 

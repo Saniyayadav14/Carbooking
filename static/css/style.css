@@ -1032,11 +1032,11 @@ a {
     min-height:850px;
     width: 100%;
     background-color: rgb(239, 239, 239);
-
+    padding: 60px 0px;
 }
 
 .cental-topic {
-    min-height: 200px;
+    min-height: 100px;
     width: 100%;
     text-align: center;
 }
@@ -1044,7 +1044,6 @@ a {
 .topic-service {
     color: var(--secondary-color);
     font-size: 50px;
-    padding-top: 60px;
 }
 
 .topic-service span {
@@ -1056,12 +1055,14 @@ a {
     width: 65%;
     margin: auto;
     line-height: 23px;
+    padding: 20px 0px;
 }
 
 .cental-services {
-    min-height: 900px;
+    min-height: 400px;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    padding: 60px 0px;
 }
 
 .services-heading {
@@ -1088,16 +1089,19 @@ a {
 }
 
 .car-services {
-    height: 600px;
+    min-height: 300px;
     width: 100%;
 }
 
 .car-services1 {
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     display: flex;
     padding-top: 10px;
     justify-content: space-between;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px 0px;
 }
 
 .car-s {
@@ -1195,6 +1199,7 @@ a {
 .vehicle-categories {
     min-height: 700px;
     width: 100%;
+    padding: 60px 0px;
 }
 
 .vehicle-top {
@@ -1230,11 +1235,11 @@ a {
 
 .vehicle-box {
     height: 600px;
-    width: 32%;
     background-color: white;
     border-radius: 10px;
     padding-top: 22px;
     border: 1px solid black;
+    width: 98%;
 }
 
 .vehicle-inner {
@@ -1242,6 +1247,9 @@ a {
     width: 85%;
     background-color: rgb(239, 239, 239);
     margin: auto;
+}
+.vehicle-inner:hover{
+    box-shadow: 0px 0px  8px var(--primary-color);
 }
 
 .vehicle-car {
@@ -1569,10 +1577,9 @@ a {
 }
 .person-card{
     height:250px;
-    width:48%;
- 
     border:1px solid black;
       border-radius: 10px;
+      width: 98%;
 }
 .card-top{
     width:100%;
@@ -1961,8 +1968,9 @@ a {
     height: 45px;
     width: 100%;
     border-radius: 40px;
-    background-color: var(--secondary-color);
+    background-color:var(--secondary-color);
     border: 0px;
+    color: white;
 }
 
 .links {
@@ -2009,7 +2017,7 @@ a {
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    background-color: rgb(84, 84, 162);
+    background-color: rgba(2, 2, 69, 0.893);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -25,130 +25,59 @@
         </div>
         <div class="overlay">
             <div class="blog-bottom">
+                {% for b in blog_show %}
                 <div class="blog-rental">
                     <div class="blog-img">
-                        <img src="{% static 'image/blog-1.jpg' %}" alt="blog-1">
+                        <img src="{{ b.blog_image.url }}" alt="blog-1">
                         <div class="dec30">
-                            <span>30 Dec 2025</span>
+                            <span>{{ b.blog_date }}</span>
                         </div>
                     </div>
                     <div class="blog-text">
                         <div class="martin">
-                            <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
-                            <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
+                            <p><span><i class="fa-solid fa-user"></i></span>{{ b.blog_authorname }}</p>
+                            <p><span><i class="fa-solid fa-message"> </i></span>{{ b.blog_comment }}</p>
                         </div>
-                        <h2 class="driving">Rental Cars how to check
-                            driving fines?
+                        <h2 class="driving">
+                            {{ b.blog_title }}
                         </h2>
-                        <p class="driving-para">To check driving fines for rental cars, you can use the official traffic
-                            or transport department website  mobile app of the city or state, where entering the
-                            vehicle number will show any pending fines.</p>
+                        <p class="driving-para">
+                            {{ b.blog_desc }}
+                        </p>
                         <h5 class="read-more">Read More
                             <span><i class="fa-solid fa-arrow-right"></i></span>
                         </h5>
                     </div>
                 </div>
-                <div class="blog-rental">
-                    <div class="blog-img">
-                        <img src="{% static 'image/blog-2.jpg' %}" alt="blog">
-                        <div class="dec30">
-                            <span>25 Dec 2025</span>
-                        </div>
-                    </div>
-                    <div class="blog-text">
-                        <div class="martin">
-                            <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
-                            <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
-                        </div>
-                        <h2 class="driving"> Rental cost of sport and other
-                            cars
-                        </h2>
-                        <p class="driving-para">The rental cost of cars varies by type, with sports cars generally priced higher due to performance and luxury features.
-                        Standard or economy cars are more affordable, making them suitable for everyday use and budget-conscious customers.</p>
-                        <h5 class="read-more">Read More
-                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                        </h5>
-                    </div>
-                </div>
-                <div class="blog-rental">
-                    <div class="blog-img">
-                        <img src="{% static 'image/blog-3.jpg' %}" alt="blog-3">
-                        <div class="dec30">
-                            <span>27 Dec 2025</span>
-                        </div>
-                    </div>
-                    <div class="blog-text">
-                        <div class="martin">
-                            <p><span><i class="fa-solid fa-user"></i></span> Martin.C</p>
-                            <p><span><i class="fa-solid fa-message"> </i></span> 6 Comments</p>
-                        </div>
-                        <h2 class="driving"> Document required for car rental
-                        </h2>
-                        <p class="driving-para">To rent a car, you typically need a valid driving license and a government-issued ID proof.
-                    Some rental companies may also require a credit/debit card and proof of address for verification.</p>
-                        <h5 class="read-more">Read More
-                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                        </h5>
-                    </div>
-                </div>
+            {% endfor %}
+               
             </div>
         </div>
     </section>
     <!-- cental blog & news end -->
 
           <!-- numbering of car start -->
-        <section class="numbering-car">
-            <div class="numbering-inner">
-                <div class="overlay">
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">829+</h4>
-                            <h5 class="number-para">Happy Clients</h5>
+       <section class="numbering-car">
+        <div class="numbering-inner">
+            <div class="overlay">
+                {% for n in Numbering_show %}
+                <div class="happy-client">
+                    <div class="icon-box">
+                        <div class="like-box">
+                            <i class="{{ n.num_icon }}"></i>
                         </div>
                     </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-car"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">56+</h4>
-                            <h5 class="number-para">Number of cars</h5>
-                        </div>
-                    </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-building"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">127+</h4>
-                            <h5 class="number-para">Car Center</h5>
-                        </div>
-                    </div>
-                    <div class="happy-client">
-                        <div class="icon-box">
-                            <div class="like-box">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                        </div>
-                        <div class="icon-box1">
-                            <h4 class="number">589+</h4>
-                            <h5 class="number-para">Total kilometers</h5>
-                        </div>
+                    <div class="icon-box1">
+                        <h4 class="number">{{ n.num_counter }}</h4>
+                        <h5 class="number-para">{{ n.num_title }}</h5>
                     </div>
                 </div>
+            {% endfor %}
+            </div>
 
-            </div>
-            </div>
-        </section>
+        </div>
+        </div>
+    </section>
         <!-- numbering of car end -->
 
           <!-- rent your car start -->

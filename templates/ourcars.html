@@ -15,7 +15,7 @@
     <!-- about section end -->
 
      <!-- vehicle categories start-->
-    <section class="vehicle-categories">
+     <section class="vehicle-categories">
         <div class="vehicle-top">
             <h3 class="topic-vehicle">Vehicle<span> Categories</span></h3>
             <p class="vehicle-para">In a car centre, vehicle categories help organize the types of vehicles they
@@ -24,14 +24,15 @@
                 their battery systems.</p>
         </div>
         <div class="vehicle-bottom">
-            <div class="overlay">
+            <div class="overlay owl-carousel owl-theme" id="vehicle">
+                {% for c in cat_show %}
                 <div class="vehicle-box">
                     <div class="vehicle-inner">
                         <div class="vehicle-car">
-                            <img src="{% static 'image/car-4.png' %}" alt="car-4">
+                            <img src="{{c.cat_image.url}}" alt="car-4">
                         </div>
                         <div class="vehicle-topic">
-                            <h4 class="hyundai">Hyundai Kona Electric</h4>
+                            <h4 class="hyundai">{{c.cat_title}}</h4>
                             <p class="review">4.8 Review
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -40,7 +41,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </p>
                             <div class="price-box">
-                                <span>$187:00/Day</span>
+                                <span>{{c.cat_rate}}</span>
                             </div>
                             <div class="icon-txt">
                                 <P><i class="fa-solid fa-users"></i>4Seat</P>
@@ -60,76 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="vehicle-box">
-                    <div class="vehicle-inner">
-                        <div class="vehicle-car">
-                            <img src="{% static 'image/car-1.png' %}" alt="car-4">
-                        </div>
-                        <div class="vehicle-topic">
-                            <h4 class="hyundai">Mercedes Benz R3</h4>
-                            <p class="review">4.5 Review
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </p>
-                            <div class="price-box">
-                                <span>$99:00/Day</span>
-                            </div>
-                            <div class="icon-txt">
-                                <P><i class="fa-solid fa-users"></i>4Seat</P>
-                                <P><i class="fa-solid fa-car"></i>AT/MT</P>
-                                <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
-                            </div>
-                            <div class="icon-txt1">
-                                <P><i class="fa-solid fa-car"></i>2015</P>
-                                <P><i class="fa-solid fa-gears"></i>AUTO</P>
-                                <P><i class="fa-solid fa-road"></i>27K</P>
-                            </div>
-
-                            <div class="booking-now">
-                                <a href="#">Book Now</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="vehicle-box">
-                    <div class="vehicle-inner">
-                        <div class="vehicle-car">
-                            <img src="{% static 'image/car-2.png' %}" alt="car-4">
-                        </div>
-                        <div class="vehicle-topic">
-                            <h4 class="hyundai">Toyota Corolla Cross</h4>
-                            <p class="review">3.5 Review
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </p>
-                            <div class="price-box">
-                                <span>$128:00/Day</span>
-                            </div>
-                            <div class="icon-txt">
-                                <P><i class="fa-solid fa-users"></i>4Seat</P>
-                                <P><i class="fa-solid fa-car"></i>AT/MT</P>
-                                <P><i class="fa-solid fa-gas-pump"></i>Petrol</P>
-                            </div>
-                            <div class="icon-txt1">
-                                <P><i class="fa-solid fa-car"></i>2015</P>
-                                <P><i class="fa-solid fa-gears"></i>AUTO</P>
-                                <P><i class="fa-solid fa-road"></i>27K</P>
-                            </div>
-
-                            <div class="booking-now">
-                                <a href="#">Book Now</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            {% endfor %}
             </div>
         </div>
     </section>
@@ -144,28 +76,16 @@
             </div>
             <div class="process-card">
                 <div class="overlay">
+                     {% for p in Centalprocess_show %}
                     <div class="card-1">
-                        <h4 class="card-heading">Come in Contact</h4>
-                        <p class="card-para">Customer contact ensures smooth communication throughout the car service process.</p>
+                        <h4 class="card-heading">{{ p.pro_title }}</h4>
+                        <p class="card-para">{{ p.pro_desc }}</p>
                           <div class="card-box">
-                            <span class="card-number">01.</span>
+                            <span class="card-number"> {{ p.pro_number }}</span>
                           </div>
                     </div>
                   
-                    <div class="card-1">
-                         <h4 class="card-heading">Choose A Car</h4>
-                        <p class="card-para">Choosing a car in the central process means selecting the right vehicle based on the customer's needs.</p>
-                          <div class="card-box">
-                            <span class="card-number">02.</span>
-                          </div>
-                    </div>
-                    <div class="card-1">
-                         <h4 class="card-heading">Enjoy Driving</h4>
-                        <p class="card-para">In the central process,enjoying driving is facilitated through a test drive. </p>
-                          <div class="card-box">
-                            <span class="card-number">03.</span>
-                          </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
 
