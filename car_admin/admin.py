@@ -1,5 +1,5 @@
 from django.contrib import admin
-from car_admin.models import Service,Blog,Cat,Review,Centalfeatures,Centalprocess,Numbering,BookingForm
+from car_admin.models import Service,Blog,Cat,Review,Centalfeatures,Centalprocess,Numbering,BookingForm,ContactForm
 
 
 class ServiceAdmin(admin.ModelAdmin):
@@ -16,24 +16,28 @@ admin.site.register(Cat,CatAdmin)
 
 
 class ReviewAdmin(admin.ModelAdmin):
-     list_display=('review_image','review_title','review_icon','review_desc')
+     list_display4=('review_image','review_title','review_icon','review_desc')
 admin.site.register(Review,ReviewAdmin)
 
 class CentalfeaturesAdmin(admin.ModelAdmin):
-     list_display=('feat_icon','feat_title','feat_desc')
+     list_display5=('feat_icon','feat_title','feat_desc')
 admin.site.register(Centalfeatures,CentalfeaturesAdmin)
 
 class CentalprocessAdmin(admin.ModelAdmin):
-     list_display=('pro_title','pro_number','pro_desc')
+     list_display6=('pro_title','pro_number','pro_desc')
 admin.site.register(Centalprocess,CentalprocessAdmin)
 
 class NumberingAdmin(admin.ModelAdmin):
-     list_display=('num_icon','num_counter','num_title')
+     list_display7=('num_icon','num_counter','num_title')
 admin.site.register(Numbering,NumberingAdmin)
 
 class BookingFormAdmin(admin.ModelAdmin):
-     list_display=('car_type','pickup_location','drop_location','pickup_date','pickup_time','drop_date','drop_time')
+     list_display8=('car_type','pickup_location','drop_location','pickup_date','pickup_time','drop_date','drop_time')
 admin.site.register(BookingForm,BookingFormAdmin)
+
+class ContactFormAdmin(admin.ModelAdmin):
+     list_display9=('your_name','email','your_phone','your_projects','subjects','msg')
+admin.site.register(ContactForm,ContactFormAdmin)
 
 
 

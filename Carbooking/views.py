@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render,redirect
-from car_admin.models import Service,Cat,Blog,Review,Centalprocess,Centalfeatures,Numbering,BookingForm
+from car_admin.models import Service,Cat,Blog,Review,Centalprocess,Centalfeatures,Numbering,BookingForm,ContactForm
 
 # def HomePage(request):
 #     return HttpResponse("Hello Welcome to Home Page")
@@ -84,8 +84,23 @@ def ServicePage(request):
 def PagesPage(request):
     return render(request,"pages.html")
 
+
+
 def ContactPage(request):
+    if request.method == "POST":
+        ContactForm.objects.create(
+            your_name= request.POST.get('your_name'),
+            email= request.POST.get('email'),
+            your_phone= request.POST.get('your_phone'),
+            your_projects= request.POST.get('your_projects'),
+            subjects= request.POST.get('subjects'),
+            msg= request.POST.get('msg')
+        )
+        return redirect('contact')
+    
     return render(request,"contact.html")
+
+
 
 def ourfeaturePage(request):
     NumberingData=Numbering.objects.all()

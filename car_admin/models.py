@@ -57,3 +57,12 @@ class BookingForm(models.Model):
      drop_date=models.DateField()
      drop_time=models.TimeField()
         
+# create contact-form
+class ContactForm(models.Model):
+     your_name=models.CharField(max_length=100)
+     email=models.CharField(max_length=100)
+     your_phone=models.CharField(max_length=100)
+     your_projects=models.CharField(max_length=200)
+     subjects=models.CharField(max_length=200)
+     msg=models.TextField()
+    
