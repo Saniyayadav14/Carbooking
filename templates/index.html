@@ -14,66 +14,27 @@
                     <div class="hero-form">
                         <div class="car-form">
                             <h3>CONTINUE CAR RESERVATION</h3>
-                            <form>
-                                <select class="selection">
-                                    <option value="">Select Your car Type</option>
-                                    <option value="">VW Golf VII</option>
-                                    <option value="">Audi A1 S-line</option>
-                                    <option value="">Toyota Camry</option>
-                                    <option value="">BMW 320 Modernline</option>
-                                </select>
-                                <div class="input-group">
-                                    <div class="pick-up">
-                                        <span><i class="fa-solid fa-location-dot"></i>
-                                            Pick Up</span>
-                                    </div>
-                                    <input type="text" placeholder="Enter a City or Airport">
-                                </div>
-                                <h4 class="form-heading">Need a Different drop-off location</h4>
-                                <div class="input-group">
-                                    <div class="pick-up">
-                                        <span><i class="fa-solid fa-location-dot"></i>
-                                            Drop Off</span>
-                                    </div>
-                                    <input type="text" placeholder="Enter a City or Airport">
-                                </div>
+                        <form method="POST" action="{% url 'home' %}">
+                            {% csrf_token %}
+                            <select name="car_type" class="input-text">
+                            <option value="">Select Your Car Type</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Sedan">Sedan</option>
+                            </select>
 
-                                <div class="input-group1">
-                                    <div class="pick-up1">
-                                        <span><i class="fa-solid fa-calendar-days"></i>
-                                            Pick Up</span>
-                                    </div>
-                                    <input type="date" placeholder="dd-mm-yy">
-                                    <select class="selection1">
-                                        <option value="time">12:00AM</option>
-                                        <option value="time">1:00AM</option>
-                                        <option value="time">2:00AM</option>
-                                        <option value="time">3:00AM</option>
-                                        <option value="time">4:00AM</option>
-                                    </select>
-
-
-                                </div>
-
-                                <div class="input-group1">
-                                    <div class="pick-up1">
-                                        <span><i class="fa-solid fa-calendar-days"></i>
-                                            Drop Up</span>
-                                    </div>
-                                    <input type="date" placeholder="dd-mm-yy">
-                                    <select class="selection1">
-                                        <option value="time">12:00AM</option>
-                                        <option value="time">1:00AM</option>
-                                        <option value="time">2:00AM</option>
-                                        <option value="time">3:00AM</option>
-                                        <option value="time">4:00AM</option>
-                                    </select>
-                                </div>
-                                <div class="book-now">
-                                    <input type="submit" value="Book Now">
-                                </div>
-
-                            </form>
+                            <input  class="input-text" type="text" name="pickup_location" placeholder="Pick Up Location">
+                            <input  class="input-text" type="text" name="drop_location" placeholder="Drop Off Location">
+                        <div class=text-outer>
+                            <input class="input-text1" type="date" name="pickup_date" placeholder="Pickup Date">
+                            <input class="input-text1" type="time" name="pickup_time" placeholder="">
+                        </div>
+                        <div class=text-outer>
+                             <input class="input-text1" type="date" name="drop_date" placeholder="Drop Date">
+                            <input  class="input-text1"type="time" name="drop_time">
+                        </div>
+                            <button  class="btn" type="submit"><span>Book Now</span></button>
+                        </form>
+                            
                         </div>
                     </div>
                 </div>

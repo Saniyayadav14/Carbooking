@@ -238,124 +238,39 @@ a {
     padding: 20px;
 
 }
-
-.selection {
-    width: 100%;
+.input-text{
     height: 40px;
-    border-radius: 10px;
-    color: grey;
-    padding: 0px ;
-}
-
-.input-group {
     width: 100%;
+    margin:10px 0px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    border: none;
+}
+.input-text1{
     height: 40px;
-
-    border-radius: 10px;
-    display: flex;
-    padding: 25px 0px;
-    border-radius: 10px;
-
-}
-
-.pick-up {
-    width: 20%;
-    height: 39px;
-    border-right: 1px solid grey;
-    background-color: rgb(244, 240, 240);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.pick-up span {
-    color: var(--forth-color);
-    line-height: 40px;
-}
-
-.pick-up span i {
-    color: grey;
-}
-
-.input-group input {
-    height: 39px;
-    width: 80%;
-    border: 0px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.form-heading {
-    color: var(--ternary-color);
-    padding: 30px 0px 0px 0px;
-
-}
-
-.input-group1 {
-    width: 100%;
-    height: 40px;
-    border-radius: 10px;
-    display: flex;
-    padding: 25px 0px;
-}
-
-.pick-up1 {
-    width: 21.5%;
-    height: 39px;
-    border-right: 1px solid grey;
-    background-color: rgb(244, 240, 240);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.pick-up1 span {
-    color: var(--forth-color);
-    line-height: 40px;
-}
-
-.pick-up1 span i {
-    color: grey;
-}
-
-.input-group1 input {
-    height: 39px;
-    width: 36%;
-    border: 0px;
-    color: grey;
-}
-
-.form-heading {
-    color: var(--ternary-color);
-    padding: 30px 0px 0px 0px;
-
-}
-
-.selection1 {
     width: 50%;
-    height: 39px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 0px;
-    border-left: 1px solid grey;
-    color: grey;
-
+    margin:10px 0px;
+    border-radius: 6px;
+     padding: 0px 10px;
+     border: none;
 }
-
-.book-now {
+.text-outer{
+    display: flex;
+    gap: 10px;
+}
+.btn{
     height: 40px;
     width: 100%;
-    background-color: var(--ternary-color);
-    border-radius: 10px;
-    margin-top: 30px;
+    margin:10px 0px;
+    border-radius: 6px;
+     padding: 0px 10px;
+     border: none;
+   
 }
-
-.book-now input {
-    height: 40px;
-    width: 100%;
+.btn span{
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 20px;
-    border: 0px;
-    border-radius: 10px;
+    font-size: 18px;
 }
 
 /* hero section end */
@@ -1901,6 +1816,65 @@ a {
     }
 
 /* 404 page section end */
+
+/* contact form start */
+    /* <!--contact-car RESERVATION start--> */
+.contact-form1{
+    min-height: 385px;
+    width: 100%;
+    
+    margin: 40px 0px;
+}
+.contacts-form-con{
+    background-color: var(--secondary-color);
+    width: 43%;
+    margin: 40px 0px;
+}
+.input-text2{
+    height:48px;
+    width:47%;
+    margin:12px 17px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    border: none;
+}
+.input-text-b{
+    height:45px;
+    width:93%;
+    margin:14px 18px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    border: none;
+}
+.input-text-m{
+    height:108px;
+    width:93%;
+    margin:3px 17px;
+    border-radius: 10px;
+    padding: 0px 9px;
+    border: none;
+}
+.btn1{
+    height: 45px;
+    width: 92%;
+    margin: 10px 17px;
+    border-radius: 10px;
+    padding: 0px 9px;
+    border: none;
+}
+.msg{
+    font-size: 20px;
+     
+    padding: 20px 19px;
+    color: var(--primary-color);
+}
+
+
+
+
+ /* <!--contact-car RESERVATION end--> */
+
+/* contact form end */
 
 /* footer section start */
 .foot-1 {

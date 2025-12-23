@@ -47,5 +47,13 @@ class Review(models.Model):
       review_icon=models.CharField(max_length=200)
       review_desc=models.TextField()
 
-
-    
+# create form
+class BookingForm(models.Model):
+     car_type=models.CharField(max_length=100)
+     pickup_location=models.CharField(max_length=100)
+     drop_location=models.CharField(max_length=100)
+     pickup_date=models.DateField()
+     pickup_time=models.TimeField()
+     drop_date=models.DateField()
+     drop_time=models.TimeField()
+        

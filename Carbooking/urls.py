@@ -34,6 +34,8 @@ urlpatterns = [
     path('testimonial/',views.testimonialPage, name="testimonial"),
     path('numpage/',views.numpagePage, name="numpage"),
 
+    path('success/',views.success, name="success")
+
 ]
 
 if settings.DEBUG:

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from car_admin.models import Service,Blog,Cat,Review,Centalfeatures,Centalprocess,Numbering
+from car_admin.models import Service,Blog,Cat,Review,Centalfeatures,Centalprocess,Numbering,BookingForm
 
 
 class ServiceAdmin(admin.ModelAdmin):
@@ -30,5 +30,11 @@ admin.site.register(Centalprocess,CentalprocessAdmin)
 class NumberingAdmin(admin.ModelAdmin):
      list_display=('num_icon','num_counter','num_title')
 admin.site.register(Numbering,NumberingAdmin)
+
+class BookingFormAdmin(admin.ModelAdmin):
+     list_display=('car_type','pickup_location','drop_location','pickup_date','pickup_time','drop_date','drop_time')
+admin.site.register(BookingForm,BookingFormAdmin)
+
+
 
 #  Register your models here.

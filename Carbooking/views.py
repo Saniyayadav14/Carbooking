@@ -1,6 +1,6 @@
 from django.http import HttpResponse
-from django.shortcuts import render
-from car_admin.models import Service,Cat,Blog,Review,Centalprocess,Centalfeatures,Numbering
+from django.shortcuts import render,redirect
+from car_admin.models import Service,Cat,Blog,Review,Centalprocess,Centalfeatures,Numbering,BookingForm
 
 # def HomePage(request):
 #     return HttpResponse("Hello Welcome to Home Page")
@@ -21,6 +21,18 @@ from car_admin.models import Service,Cat,Blog,Review,Centalprocess,Centalfeature
 #     return HttpResponse("Hello Welcome to Contact Page")
 
 def HomePage(request):
+    if request.method == "POST":
+        BookingForm.objects.create(
+            car_type= request.POST.get('car_type'),
+            pickup_location= request.POST.get('pickup_location'),
+            drop_location= request.POST.get('drop_location'),
+            pickup_date= request.POST.get('pickup_date'),
+            pickup_time= request.POST.get('pickup_time'),
+            drop_date= request.POST.get('drop_date'),
+            drop_time= request.POST.get('drop_time'),
+        )
+        return redirect('success')
+
     serviceData=Service.objects.all()
     CatData=Cat.objects.all()
     BlogData=Blog.objects.all()
@@ -103,3 +115,6 @@ def testimonialPage(request):
 
 def numpagePage(request):
     return render(request,"numpage.html")
+
+def success(request):
+    return render(request,"success.html")
